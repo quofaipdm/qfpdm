@@ -1,0 +1,43 @@
+content:
+  - name: articles
+    label: Articles
+    type: collection
+    path: src/content/articles
+    view:
+      fields: [title, date, draft]
+    fields:
+      - { name: title,       label: Titre,                                  type: string,   required: true }
+      - { name: description, label: Résumé (pour le référencement),         type: string }
+      - { name: date,        label: Date de publication,                    type: date,     required: true }
+      - { name: cover,       label: "Image de couverture (URL ImageKit)",   type: string }
+      - { name: coverWidth,  label: "Largeur de l'image (px)",              type: number }
+      - { name: coverHeight, label: "Hauteur de l'image (px)",              type: number }
+      - { name: videoUrl,    label: "Vidéo (URL YouTube ou Vimeo)",         type: string }
+      - { name: draft,       label: Brouillon,                              type: boolean,  default: true }
+      - { name: body,        label: Contenu,                                type: rich-text }
+
+  - name: pages
+    label: Pages
+    type: collection
+    path: src/content/pages
+    fields:
+      - { name: title,       label: Titre,            type: string,   required: true }
+      - { name: description, label: Description SEO,  type: string }
+      - { name: body,        label: Contenu,           type: rich-text }
+
+  - name: galleries
+    label: Galeries
+    type: collection
+    path: src/content/galleries
+    view:
+      fields: [title, date, draft]
+    fields:
+      - { name: title,       label: Nom de la galerie,                        type: string,   required: true }
+      - { name: description, label: Description,                              type: string }
+      - { name: date,        label: "Date de l'événement",                   type: date,     required: true }
+      - { name: cover,       label: "Photo de couverture (URL ImageKit)",     type: string,   required: true }
+      - { name: coverWidth,  label: "Largeur de la couverture (px)",          type: number }
+      - { name: coverHeight, label: "Hauteur de la couverture (px)",          type: number }
+      - { name: videoUrl,    label: "Vidéo de résumé (URL YouTube ou Vimeo)", type: string }
+      - { name: draft,       label: Brouillon,                                type: boolean,  default: true }
+      - { name: body,        label: Description détaillée,                   type: rich-text }
