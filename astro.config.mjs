@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://mon-site-asso.pages.dev', // ← mettre à jour avec le domaine final
+  site: 'https://qfpdm.pages.dev', // ← mettre à jour avec le domaine final
 
   output: 'static',
   // Pas d'adaptateur @astrojs/cloudflare : site 100% statique.
