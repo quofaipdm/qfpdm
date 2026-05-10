@@ -1,0 +1,65 @@
+---
+import { Image } from 'astro:assets';
+import { imagePresets } from '@utils/imagekit';
+
+const { items } = Astro.props;
+// items: Array<{ imageUrl: string; alt: string; width?: number; height?: number }>
+---
+
+<div class="gallery-grid pswp-gallery" id="gallery">
+  {items.map((item) => (
+    <a
+      href={imagePresets.gallery(item.imageUrl)}
+      data-pswp-width={item.width ?? 0}
+      data-pswp-height={item.height ?? 0}
+      class="gallery-card"
+    >
+      <Image
+        src={imagePresets.thumbnail(item.imageUrl)}
+        width={400}
+        height={300}
+        alt={item.alt}
+        layout="constrained"
+        loading="lazy"
+        decoding="async"
+      />
+    </a>
+  ))}
+</div>
+
+<script>
+  import PhotoSwipeLightbox from 'photoswipe/lightbox';
+  import 'photoswipe/style.css';
+
+  let lightbox: PhotoSwipeLightbox | null = null;
+
+  document.addEventListener('astro:page-load', () => {
+    // Fallback dimensions si width/height absents du frontmatter (valeur 0)
+    document.querySelectorAll<HTMLAnchorElement>('a.gallery-card').forEach((a) => {
+      if (a.dataset.pswpWidth === '0' || a.dataset.pswpHeight === '0') {
+        const img = a.querySelector('img');
+        if (img) {
+          const set = () => {
+            if (img.naturalWidth) {
+              a.dataset.pswpWidth  = String(img.naturalWidth);
+              a.dataset.pswpHeight = String(img.naturalHeight);
+            }
+          };
+          img.complete ? set() : img.addEventListener('load', set);
+        }
+      }
+    });
+
+    lightbox = new PhotoSwipeLightbox({
+      gallery: '#gallery',
+      children: 'a',
+      pswpModule: () => import('photoswipe'),
+    });
+    lightbox.init();
+  });
+
+  document.addEventListener('astro:before-swap', () => {
+    lightbox?.destroy();
+    lightbox = null;
+  });
+</script>

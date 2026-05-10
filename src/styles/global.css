@@ -1,0 +1,10 @@
+/* ⚠️ INDEX D'IMPORTS UNIQUEMENT — ne jamais ajouter de styles ici */
+@import './variables.css';
+@import './reset.css';
+@import './utilities.css';
+@import './layout.css';
+@import './navigation.css';
+@import './content.css';
+@import './gallery.css';
+@import './components/buttons.css';
+@import './components/cards.css';

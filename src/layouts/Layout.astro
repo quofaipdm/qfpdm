@@ -1,0 +1,71 @@
+---
+import '../styles/global.css';
+import { SEO } from 'astro-seo';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Site de l'association QUo Faï Pas De Mau" } = Astro.props;
+const DEFAULT_THEME = 'light';
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      Script inline synchrone — s'exécute avant le premier rendu pour éviter le FOUC.
+      Ordre de priorité : localStorage → prefers-color-scheme → thème par défaut.
+      is:inline empêche Astro de bundler ce script (exécution synchrone garantie).
+    -->
+    <script is:inline define:vars={{ DEFAULT_THEME }}>
+      (function () {
+        var stored = null;
+        try { stored = localStorage.getItem('theme'); } catch (e) {}
+        var theme = stored;
+        if (!theme) {
+          try {
+            theme = window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark'
+              : DEFAULT_THEME;
+          } catch (e) {
+            theme = DEFAULT_THEME;
+          }
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+
+    <SEO title={title} description={description} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+  </head>
+  <body class="site-wrapper">
+    <slot />
+  </body>
+</html>
+```
+
+Sélecteur de thème (composant de navigation) :
+
+```astro
+<select class="theme-select" id="theme-select" aria-label="Choisir le thème">
+  <option value="light">☀️ Clair</option>
+  <option value="dark">🌙 Sombre</option>
+  <option value="foret">🌿 Forêt</option>
+</select>
+
+<script is:inline>
+  (function () {
+    var sel = document.getElementById('theme-select');
+    if (!sel) return;
+    sel.value = document.documentElement.getAttribute('data-theme') || 'light';
+    sel.addEventListener('change', function () {
+      var theme = sel.value;
+      document.documentElement.setAttribute('data-theme', theme);
+      try { localStorage.setItem('theme', theme); } catch (e) {}
+    });
+  })();
+</script>
