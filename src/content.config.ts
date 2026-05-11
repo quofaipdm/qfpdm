@@ -24,6 +24,13 @@ const pages = defineCollection({
   }),
 });
 
+const imageItem = z.object({
+  url: z.string(),
+  alt: z.string().optional(),
+  width: z.number().optional(),
+  height: z.number().optional(),
+});
+
 const galleries = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/galleries' }),
   schema: z.object({
@@ -34,6 +41,7 @@ const galleries = defineCollection({
     coverWidth: z.number().optional(),
     coverHeight: z.number().optional(),
     videoUrl: z.string().optional(),
+    images: z.array(imageItem).optional(),
     draft: z.boolean().default(false),
   }),
 });

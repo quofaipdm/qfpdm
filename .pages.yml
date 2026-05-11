@@ -40,4 +40,12 @@ content:
       - { name: coverHeight, label: "Hauteur de la couverture (px)",          type: number }
       - { name: videoUrl,    label: "Vidéo de résumé (URL YouTube ou Vimeo)", type: string }
       - { name: draft,       label: Brouillon,                                type: boolean,  default: true }
+      - name: images
+        label: Images
+        type: list
+        fields:
+          - { name: url,    label: "URL ImageKit",              type: string, required: true }
+          - { name: alt,    label: "Texte alternatif",          type: string }
+          - { name: width,  label: "Largeur (px)",              type: number }
+          - { name: height, label: "Hauteur (px)",              type: number }
       - { name: body,        label: Description détaillée,                   type: rich-text }

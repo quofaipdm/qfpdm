@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import imagekit from '@imagekit/astro/integration';
+import icon from 'astro-icon';
 
 export default defineConfig({
   site: 'https://qfpdm.pages.dev',  // à changer lors du deployment prod
@@ -14,6 +15,7 @@ export default defineConfig({
     imagekit({
       urlEndpoint: 'https://ik.imagekit.io/qfpdm',
     }),
+    icon(),
   ],
 
   build: {
