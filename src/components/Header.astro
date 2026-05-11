@@ -1,0 +1,12 @@
+---
+import Nav from '@components/Nav.astro';
+
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+---
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="site-logo">Quo Faï Pas De Mau</a>
+    <Nav currentPath={currentPath} />
+  </div>
+</header>

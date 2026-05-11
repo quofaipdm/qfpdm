@@ -1,0 +1,63 @@
+---
+import { getCollection, render } from 'astro:content';
+import { Image } from 'astro:assets';
+import Layout from '@layouts/Layout.astro';
+import GalleryGrid from '@components/GalleryGrid.astro';
+
+export async function getStaticPaths() {
+  const galleries = await getCollection('galleries', ({ data }) => !data.draft);
+  return galleries.map((g) => ({
+    params: { id: g.id },
+    props: { gallery: g },
+  }));
+}
+
+const { gallery } = Astro.props;
+const { data } = gallery;
+const { Content } = await render(gallery);
+
+const images = (data.images ?? []).map((img) => ({
+  imageUrl: img.url,
+  alt: img.alt ?? data.title,
+  width: img.width,
+  height: img.height,
+}));
+
+const hasBody = gallery.body?.trim().length > 0;
+---
+
+<Layout title={`${data.title} — Galeries`} description={data.description}>
+  <article>
+    <header class="content-header">
+      <h1 class="content-title">{data.title}</h1>
+      {data.description && <p class="content-description">{data.description}</p>}
+      <p class="content-meta">
+        {data.date.toLocaleDateString('fr-FR', {
+          year: 'numeric', month: 'long', day: 'numeric',
+        })}
+      </p>
+    </header>
+
+    {data.cover && (
+      <Image
+        src={data.cover}
+        width={1200}
+        height={600}
+        alt={data.title}
+        layout="full-width"
+        priority
+        transformation={[{ width: 1200, quality: 85 }]}
+      />
+    )}
+
+    {hasBody && (
+      <div class="prose">
+        <Content />
+      </div>
+    )}
+
+    {images.length > 0
+      ? <GalleryGrid items={images} />
+      : !hasBody && <p>Aucune image dans cette galerie.</p>}
+  </article>
+</Layout>

@@ -1,0 +1,63 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+
+const navItems = [
+  { href: '/', label: 'Accueil' },
+  { href: '/galeries', label: 'Galeries' },
+  { href: '/articles', label: 'Articles' },
+];
+---
+
+<button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
+  <Icon name="lucide:menu" size={24} />
+</button>
+
+<nav>
+  <ul class="nav-list" id="nav-list">
+    {navItems.map((item) => (
+      <li>
+        <a
+          href={item.href}
+          class="nav-link"
+          aria-current={currentPath === item.href ? 'page' : undefined}
+        >
+          {item.label}
+        </a>
+      </li>
+    ))}
+    <li>
+      <select class="theme-select" id="theme-select" aria-label="Choisir le thème">
+        <option value="light">☀️ Clair</option>
+        <option value="dark">🌙 Sombre</option>
+        <option value="foret">🌿 Forêt</option>
+      </select>
+    </li>
+  </ul>
+</nav>
+
+<script>
+  const toggle = document.getElementById('nav-toggle');
+  const list = document.getElementById('nav-list');
+  if (toggle && list) {
+    toggle.addEventListener('click', () => {
+      const isOpen = list.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
+
+  const sel = document.getElementById('theme-select');
+  if (sel) {
+    sel.value = document.documentElement.getAttribute('data-theme') || 'light';
+    sel.addEventListener('change', () => {
+      const theme = sel.value;
+      document.documentElement.setAttribute('data-theme', theme);
+      try { localStorage.setItem('theme', theme); } catch (e) {}
+    });
+  }
+</script>
