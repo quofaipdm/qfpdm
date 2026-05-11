@@ -1,24 +1,20 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import imagekit from '@imagekit/astro/integration';
 
 export default defineConfig({
-  site: 'https://qfpdm.pages.dev', // ← mettre à jour avec le domaine final
+  site: 'https://qfpdm.pages.dev',  // à changer lors du deployment prod
 
   output: 'static',
   // Pas d'adaptateur @astrojs/cloudflare : site 100% statique.
   // Cloudflare Pages sert dist/ directement.
 
-  integrations: [sitemap()],
-
-  image: {
-    // Autorise ImageKit à être utilisé avec <Image> de astro:assets.
-    // Sans cette config, les images distantes ne sont pas optimisées
-    // mais restent fonctionnelles (pas de srcset automatique).
-    remotePatterns: [{
-      protocol: 'https',
-      hostname: '**.imagekit.io',
-    }],
-  },
+  integrations: [
+    sitemap(),
+    imagekit({
+      urlEndpoint: 'https://ik.imagekit.io/qfpdm',
+    }),
+  ],
 
   build: {
     inlineStylesheets: 'auto',

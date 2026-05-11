@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets';
-import { imagePresets } from '@utils/imagekit';
 
 const { items } = Astro.props;
 // items: Array<{ imageUrl: string; alt: string; width?: number; height?: number }>
@@ -9,20 +8,23 @@ const { items } = Astro.props;
 <div class="gallery-grid pswp-gallery" id="gallery">
   {items.map((item) => (
     <a
-      href={imagePresets.gallery(item.imageUrl)}
+      href={`${item.imageUrl}?tr=w-800`}
       data-pswp-width={item.width ?? 0}
       data-pswp-height={item.height ?? 0}
       class="gallery-card"
     >
-      <Image
-        src={imagePresets.thumbnail(item.imageUrl)}
-        width={400}
-        height={300}
-        alt={item.alt}
-        layout="constrained"
-        loading="lazy"
-        decoding="async"
-      />
+      {item.imageUrl && (
+        <Image
+          src={item.imageUrl}
+          width={400}
+          height={300}
+          alt={item.alt}
+          layout="constrained"
+          loading="lazy"
+          decoding="async"
+          transformation={[{ width: 400, height: 300, quality: 80 }]}
+        />
+      )}
     </a>
   ))}
 </div>
