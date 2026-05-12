@@ -25,7 +25,7 @@ content:
     fields:
       - { name: title,       label: Titre,            type: string,   required: true }
       - { name: description, label: Description SEO,  type: string }
-      - { name: galleryRef,  label: "Galerie associée — coller l'URL complète de la galerie", type: string }
+      - { name: galleryRef,  label: "Galerie associée", type: string }
       - { name: body,        label: Contenu,           type: rich-text }
 
   - name: galleries
