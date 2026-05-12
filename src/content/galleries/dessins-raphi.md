@@ -13,5 +13,7 @@ images: |
   https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Dessins_Raphi/illus%20011%20Les%20Krakrobats.jpg?updatedAt=1778564627710
   https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Dessins_Raphi/illus%20022%20QFDB%2001.jpg?updatedAt=1778564627726
 ---
+![RaphExpo]([https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Vrac_des_archives/2005%20raph.jpg?updatedAt=1778601693395](https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Vrac_des_archives/2005%20raph.jpg?updatedAt=1778601693395))
+
 Jusqu'au 30 juin 2005, Raphael Camarero, à qui l'on doit les affiches des rencontres de jongleurs et une grosse partie des visuels du site, expose à la Galerie Res Rei à Limoges.  
 ça se passe dans les catacombes, du mardi au dimanche (15h>19h) et l'entrée est libre.
