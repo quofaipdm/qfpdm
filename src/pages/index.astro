@@ -1,7 +1,103 @@
 ---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 import Layout from '@layouts/Layout.astro';
+
+const articles = (await getCollection('articles', ({ data }) => !data.draft && data.category === 'news'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const latest = articles[0] ?? null;
 ---
 
-<Layout title="Accueil — Quo Faï Pas De Mau">
-  <h1>Bienvenue</h1>
+<Layout title="Accueil — Quo Faï Pas De Mau" description="Site de l'association Quo Faï Pas De Mau">
+  <section class="hero">
+    <div class="hero-body">
+      <h1 class="hero-title">Quo Faï Pas De Mau</h1>
+      <p class="hero-subtitle">Association culturelle en Limousin</p>
+      {latest && (
+        <a href={`/articles/${latest.id}`} class="btn btn-primary hero-cta">
+          Voir les dernières actualités
+        </a>
+      )}
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="content-title">Actualités</h2>
+
+    {articles.length === 0 && <p>Aucun article pour le moment.</p>}
+
+    <div class="galleries-grid">
+      {articles.map((a) => (
+        <a href={`/articles/${a.id}`} class="card">
+          {a.data.cover && (
+            <Image
+              src={a.data.cover}
+              width={800}
+              height={450}
+              alt={a.data.title}
+              layout="constrained"
+              loading="lazy"
+              transformation={[{ width: 800, height: 450, quality: 85 }]}
+            />
+          )}
+          <div class="card-body">
+            <h2 class="card-title">{a.data.title}</h2>
+            {a.data.description && <p class="card-description">{a.data.description}</p>}
+            <div class="card-meta">
+              <time>
+                {a.data.date.toLocaleDateString('fr-FR', {
+                  year: 'numeric', month: 'long', day: 'numeric',
+                })}
+              </time>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
 </Layout>
+
+<style>
+  .hero {
+    position: relative;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: #ffffff;
+    padding: var(--spacing-2xl) var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+  }
+
+  .hero-body {
+    max-width: 640px;
+    margin-inline: auto;
+  }
+
+  .hero-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    line-height: 1.1;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .hero-cta {
+    background-color: #ffffff;
+    color: var(--color-primary);
+    border-color: #ffffff;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-color: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  .section {
+    padding-block: var(--spacing-xl);
+  }
+</style>

@@ -1,18 +1,23 @@
 import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { decodeEntities } from '@utils/entities';
+
+const str = () => z.string().transform(decodeEntities);
+const strOpt = () => z.string().optional().transform(s => s === undefined ? undefined : decodeEntities(s));
 
 const articles = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/articles' }),
   schema: z.object({
-    title: z.string(),
-    description: z.string().optional(),
+    title: str(),
+    description: strOpt(),
     date: z.date(),
-    cover: z.string().optional(),
+    category: z.enum(['news', 'birbizis', 'archives']).default('news'),
+    cover: strOpt(),
     coverWidth: z.number().optional(),
     coverHeight: z.number().optional(),
-    videoUrl: z.string().optional(),
-    galleryRef: z.string().optional(),
+    videoUrl: strOpt(),
+    galleryRef: strOpt(),
     draft: z.boolean().default(false),
   }),
 });
@@ -20,15 +25,15 @@ const articles = defineCollection({
 const pages = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/pages' }),
   schema: z.object({
-    title: z.string(),
-    description: z.string().optional(),
-    galleryRef: z.string().optional(),
+    title: str(),
+    description: strOpt(),
+    galleryRef: strOpt(),
   }),
 });
 
 const imageItem = z.object({
   url: z.string(),
-  alt: z.string().optional(),
+  alt: strOpt(),
   width: z.number().optional(),
   height: z.number().optional(),
 });
@@ -36,13 +41,13 @@ const imageItem = z.object({
 const galleries = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/galleries' }),
   schema: z.object({
-    title: z.string(),
-    description: z.string().optional(),
+    title: str(),
+    description: strOpt(),
     date: z.date(),
     cover: z.string(),
     coverWidth: z.number().optional(),
     coverHeight: z.number().optional(),
-    videoUrl: z.string().optional(),
+    videoUrl: strOpt(),
     images: z.union([z.string(), z.array(z.union([z.string(), imageItem]))]).optional(),
     draft: z.boolean().default(false),
   }),

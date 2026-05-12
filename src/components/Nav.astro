@@ -1,17 +1,35 @@
 ---
 import { Icon } from 'astro-icon/components';
 
-interface Props {
-  currentPath: string;
+interface NavChild {
+  href: string;
+  label: string;
+}
+
+interface NavItem {
+  href: string;
+  label: string;
+  children?: NavChild[];
 }
 
 const { currentPath } = Astro.props;
 
-const navItems = [
-  { href: '/', label: 'Accueil' },
-  { href: '/galeries', label: 'Galeries' },
-  { href: '/articles', label: 'Articles' },
+const navItems: NavItem[] = [
+  { href: '/', label: 'Bienvenue' },
+  { href: '/birbizis', label: 'Les Birbizis' },
+  {
+    href: '/archives',
+    label: 'Les archives',
+    children: [
+      { href: '/galeries', label: 'Les galeries' },
+    ],
+  },
+  { href: '/lasso', label: "L'asso" },
 ];
+
+const isActive = (href: string) => currentPath === href;
+const isChildActive = (children: NavChild[] | undefined) =>
+  children?.some((c) => isActive(c.href)) ?? false;
 ---
 
 <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
@@ -20,17 +38,42 @@ const navItems = [
 
 <nav>
   <ul class="nav-list" id="nav-list">
-    {navItems.map((item) => (
-      <li>
-        <a
-          href={item.href}
-          class="nav-link"
-          aria-current={currentPath === item.href ? 'page' : undefined}
-        >
-          {item.label}
-        </a>
-      </li>
-    ))}
+    {navItems.map((item) => {
+      const hasChildren = item.children && item.children.length > 0;
+      const isExpanded = isActive(item.href) || isChildActive(item.children);
+
+      return (
+        <li class={hasChildren ? 'nav-item-has-children' : ''}>
+          <a
+            href={item.href}
+            class="nav-link"
+            aria-current={isActive(item.href) ? 'page' : undefined}
+          >
+            {item.label}
+          </a>
+          {hasChildren && (
+            <>
+              <button class="nav-submenu-toggle" aria-label="Sous-menu" data-expanded={isExpanded}>
+                <Icon name="lucide:chevron-down" size={16} />
+              </button>
+              <ul class="nav-submenu" data-expanded={isExpanded}>
+                {item.children!.map((child) => (
+                  <li>
+                    <a
+                      href={child.href}
+                      class="nav-link nav-submenu-link"
+                      aria-current={isActive(child.href) ? 'page' : undefined}
+                    >
+                      {child.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+        </li>
+      );
+    })}
     <li>
       <select class="theme-select" id="theme-select" aria-label="Choisir le thème">
         <option value="light">☀️ Clair</option>
@@ -50,6 +93,20 @@ const navItems = [
       toggle.setAttribute('aria-expanded', String(isOpen));
     });
   }
+
+  const submenuToggles = document.querySelectorAll<HTMLButtonElement>('.nav-submenu-toggle');
+  submenuToggles.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const parent = btn.closest('.nav-item-has-children');
+      if (!parent) return;
+      const submenu = parent.querySelector<HTMLUListElement>('.nav-submenu');
+      if (!submenu) return;
+      const isOpen = submenu.getAttribute('data-expanded') === 'true';
+      const next = !isOpen;
+      submenu.setAttribute('data-expanded', String(next));
+      btn.setAttribute('data-expanded', String(next));
+    });
+  });
 
   const sel = document.getElementById('theme-select');
   if (sel) {

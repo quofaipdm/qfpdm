@@ -3,18 +3,24 @@ import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 import Layout from '@layouts/Layout.astro';
 
-const articles = (await getCollection('articles', ({ data }) => !data.draft && data.category === 'news'))
+const articles = (await getCollection('articles', ({ data }) => !data.draft && data.category === 'birbizis'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
-<Layout title="Articles — Quo Faï Pas De Mau" description="Tous les articles de l'association">
-  <h1 class="content-title">Articles</h1>
+<Layout title="Les Birbizis — Quo Faï Pas De Mau" description="Les Birbizis, nos rencontres annuelles">
+  <header class="content-header">
+    <h1 class="content-title">Les Birbizis</h1>
+    <p class="content-description">
+      Les Birbizis sont nos rencontres annuelles autour de la jongle, de la musique et du partage.
+      Découvrez les éditions précédentes.
+    </p>
+  </header>
 
-  {articles.length === 0 && <p>Aucun article pour le moment.</p>}
+  {articles.length === 0 && <p>Aucune birbizi pour le moment.</p>}
 
   <div class="galleries-grid">
     {articles.map((a) => (
-      <a href={`/articles/${a.id}`} class="card">
+      <a href={`/birbizis/${a.id}`} class="card">
         {a.data.cover && (
           <Image
             src={a.data.cover}
