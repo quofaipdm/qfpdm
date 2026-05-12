@@ -3,6 +3,7 @@ content:
     label: Articles
     type: collection
     path: src/content/articles
+    filename: "{primary}.md"
     view:
       fields: [title, category, date, draft]
     fields:
