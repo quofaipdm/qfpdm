@@ -1,7 +1,7 @@
 ---
 title: "Birbizis 1 - Photos 2023"
 description: ""
-date: 2023
+date: 2026-05-12
 cover: "https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2023_Birbizis_1/2023_Photos/IMG_20231031_132455.jpg?updatedAt=1778565163646"
 coverWidth: 3120
 coverHeight: 4160

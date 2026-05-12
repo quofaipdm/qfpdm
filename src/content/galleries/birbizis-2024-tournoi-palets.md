@@ -1,7 +1,7 @@
 ---
 title: "Birbizis 2 - Tournoi Palets 2024"
 description: ""
-date: 2024
+date: 2026-05-12
 cover: "https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012300.jpg?updatedAt=1778565134625"
 coverWidth: 4096
 coverHeight: 3072
