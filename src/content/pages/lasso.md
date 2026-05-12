@@ -2,7 +2,7 @@
 title: L'asso
 description: Présentation de l'association Quo Faï Pas De Mau
 ---
-**[HISTORIQUE DE L'ASSO](http://quofaipasdemau.free.fr/quesaquo.php)**
+**HISTORIQUE DE L'ASSO**
 
 L’association QUO FAI PAS DE MAU ! ("Ça fait pas de mal !" En patois limousin), créée en 2005, est en fait le prolongement direct de l’association QUO FAI DAU BE créée en 1998 (Ça va ? t’as compris ?).  
 

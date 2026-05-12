@@ -1,9 +1,12 @@
 ---
 title: "Birbizis #4 "
 description: "Festival Birbizis #4 "
-date: 2025-09-01
+date: 2026-05-01
+category: news
 draft: false
 ---
+# On vous prépare le
+
 # **Festival Birbizis #4**
 
 **Du 18/09/2026 au 20/09/2026**
