@@ -1,8 +1,7 @@
 ---
-title: "Rencontre de jongleurs - 2005"
-description: ""
-date: 2026-05-12
-cover: "https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Rencontre_jongleurs_2005/legroup.jpg?updatedAt=1778577556804"
+title: Rencontre de jongleurs - 2005
+date: 2026-05-05
+cover: https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Rencontre_jongleurs_2005/legroup.jpg?updatedAt=1778577556804
 coverWidth: 800
 coverHeight: 600
 draft: false
