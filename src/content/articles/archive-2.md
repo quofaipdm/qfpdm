@@ -1,12 +1,10 @@
 ---
-title: "Première Rencontre de Jongleurs 2002"
-description: "La toute première rencontre de jongleurs en Limousin, organisée à Solignac."
+title: Première Rencontre de Jongleurs 2002
+description: La toute première rencontre de jongleurs en Limousin, organisée à Solignac.
 date: 2002-06-01
 category: archives
-cover: https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2023_Birbizis_1/2023_Photos/IMG_20231104_194231.jpg?updatedAt=1778565163640
 draft: false
 ---
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 ## Les débuts
