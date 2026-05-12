@@ -1,8 +1,7 @@
 ---
-title: "Poignée de portes Aurélien"
-description: ""
+title: Poignée de portes d'Aurélien
 date: 2026-05-12
-cover: "https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Poignees_Portes_Aurelien/P1002744.jpg?updatedAt=1778564995381"
+cover: https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Poignees_Portes_Aurelien/P1002744.jpg?updatedAt=1778564995381
 coverWidth: 800
 coverHeight: 528
 draft: false
