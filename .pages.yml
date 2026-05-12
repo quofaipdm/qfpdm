@@ -25,7 +25,7 @@ content:
     fields:
       - { name: title,       label: Titre,            type: string,   required: true }
       - { name: description, label: Description SEO,  type: string }
-      - { name: galleryRef,  label: "Galerie associée — coller l'URL complète de la galerie (ex: https://qfpdm.pages.dev/galeries/2026-05-12...)", type: string }
+      - { name: galleryRef,  label: "Galerie associée — coller l'URL complète de la galerie", type: string }
       - { name: body,        label: Contenu,           type: rich-text }
 
   - name: galleries
