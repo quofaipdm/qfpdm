@@ -12,6 +12,7 @@ const articles = defineCollection({
     coverWidth: z.number().optional(),
     coverHeight: z.number().optional(),
     videoUrl: z.string().optional(),
+    galleryRef: z.string().optional(),
     draft: z.boolean().default(false),
   }),
 });
@@ -21,6 +22,7 @@ const pages = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),
+    galleryRef: z.string().optional(),
   }),
 });
 
