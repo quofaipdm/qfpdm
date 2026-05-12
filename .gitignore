@@ -27,5 +27,3 @@ pnpm-debug.log*
 .vscode/
 dev/
 
-# media uploads (use ImageKit instead)
-media/

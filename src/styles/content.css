@@ -102,6 +102,19 @@
     border-radius: var(--border-radius-md);
     margin-block: var(--spacing-xl);
   }
+
+  & .prose-image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    margin-block: var(--spacing-xl);
+
+    & img {
+      margin-block: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 /* ─── Vidéo dans un article ─────────────────────────────────────── */
