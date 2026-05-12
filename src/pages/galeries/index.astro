@@ -7,7 +7,7 @@ const galleries = (await getCollection('galleries', ({ data }) => !data.draft))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
-<Layout title="Galeries — Quo Faï Pas De Mau" description="Toutes les galeries photos de l'association">
+<Layout title="Galeries — Quo Faï Pas De Mau" description="Les galeries photos">
   <h1 class="content-title">Galeries</h1>
 
   {galleries.length === 0 && <p>Aucune galerie pour le moment.</p>}
@@ -26,11 +26,11 @@ const galleries = (await getCollection('galleries', ({ data }) => !data.draft))
         />
         <div class="gallery-cover-info">
           <h2 class="gallery-cover-title">{g.data.title}</h2>
-          <time class="gallery-cover-date">
+          {/* <time class="gallery-cover-date">
             {g.data.date.toLocaleDateString('fr-FR', {
               year: 'numeric', month: 'long', day: 'numeric',
             })}
-          </time>
+          </time> */}
         </div>
       </a>
     ))}

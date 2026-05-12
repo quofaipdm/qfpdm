@@ -5,7 +5,7 @@ date: 2026-05-12
 cover: "https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Tournoi_Carrom_2005/carrom2.gif?updatedAt=1778564641775"
 coverWidth: 800
 coverHeight: 600
-draft: true
+draft: false
 images: |
   https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Tournoi_Carrom_2005/les%20lots.jpg?updatedAt=1778564641726
   https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Tournoi_Carrom_2005/DSCN0401.jpg?updatedAt=1778564641712
