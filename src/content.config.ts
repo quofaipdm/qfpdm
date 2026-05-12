@@ -17,7 +17,11 @@ const articles = defineCollection({
     coverWidth: z.number().optional(),
     coverHeight: z.number().optional(),
     videoUrl: strOpt(),
-    galleryRef: strOpt(),
+    galleryRef: z.union([z.string(), z.array(z.string())])
+      .optional()
+      .transform(v => v === undefined
+        ? undefined
+        : (Array.isArray(v) ? v : [v]).map(s => decodeEntities(s))),
     draft: z.boolean().default(false),
   }),
 });
@@ -27,7 +31,11 @@ const pages = defineCollection({
   schema: z.object({
     title: str(),
     description: strOpt(),
-    galleryRef: strOpt(),
+    galleryRef: z.union([z.string(), z.array(z.string())])
+      .optional()
+      .transform(v => v === undefined
+        ? undefined
+        : (Array.isArray(v) ? v : [v]).map(s => decodeEntities(s))),
   }),
 });
 

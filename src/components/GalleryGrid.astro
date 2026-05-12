@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 
-const { items } = Astro.props;
+const { items, galleryId = 'gallery' } = Astro.props;
 
 function getImageSize(w: number | undefined, h: number | undefined) {
   if (w && h) {
@@ -12,7 +12,7 @@ function getImageSize(w: number | undefined, h: number | undefined) {
 }
 ---
 
-<div class="gallery-grid pswp-gallery" id="gallery">
+<div class="gallery-grid pswp-gallery" id={galleryId}>
   {items.map((item) => {
     const size = getImageSize(item.width, item.height);
     return (
@@ -39,15 +39,15 @@ function getImageSize(w: number | undefined, h: number | undefined) {
   })}
 </div>
 
-<script>
+<script define:vars={{ galleryId }}>
   import PhotoSwipeLightbox from 'photoswipe/lightbox';
   import 'photoswipe/style.css';
 
   function initLightbox() {
-    const gallery = document.getElementById('gallery');
+    const gallery = document.getElementById(galleryId);
     if (!gallery) return;
 
-    const cards = document.querySelectorAll<HTMLAnchorElement>('a.gallery-card');
+    const cards = gallery.querySelectorAll<HTMLAnchorElement>('a.gallery-card');
 
     cards.forEach((a) => {
       if (a.dataset.pswpWidth === '0' || a.dataset.pswpHeight === '0') {
@@ -61,7 +61,7 @@ function getImageSize(w: number | undefined, h: number | undefined) {
     });
 
     const lightbox = new PhotoSwipeLightbox({
-      gallery: '#gallery',
+      gallery: `#${galleryId}`,
       children: 'a',
 
       initialZoomLevel: 'fill',

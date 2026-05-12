@@ -4,7 +4,7 @@ import { Image } from 'astro:assets';
 import { YouTube, Vimeo } from 'astro-embed';
 import Layout from '@layouts/Layout.astro';
 import GalleryGrid from '@components/GalleryGrid.astro';
-import { resolveGalleryRef } from '@utils/gallery';
+import { resolveGalleryRefs, type GallerySection } from '@utils/gallery';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles', ({ data }) => !data.draft && data.category === 'birbizis');
@@ -23,10 +23,9 @@ const isYouTube = (url: string) =>
 
 const hasBody = article.body?.trim().length > 0;
 
-let galleryImages = null;
-if (data.galleryRef) {
-  galleryImages = await resolveGalleryRef(data.galleryRef);
-}
+const gallerySections: GallerySection[] = data.galleryRef
+  ? await resolveGalleryRefs(data.galleryRef)
+  : [];
 ---
 
 <Layout title={`${data.title} — Birbizis`} description={data.description}>
@@ -67,11 +66,11 @@ if (data.galleryRef) {
       </div>
     )}
 
-    {galleryImages && galleryImages.length > 0 && (
+    {gallerySections.map((section) => (
       <section class="article-gallery">
-        <h2>Galerie photos</h2>
-        <GalleryGrid items={galleryImages} />
+        <h2>{section.title}</h2>
+        <GalleryGrid items={section.images} galleryId={section.id} />
       </section>
-    )}
+    ))}
   </article>
 </Layout>

@@ -55,3 +55,27 @@ export async function resolveGalleryRef(ref: string): Promise<GalleryImage[] | n
   if (!gallery) return null;
   return parseGalleryImages(gallery.data.images, gallery.data.title);
 }
+
+export interface GallerySection {
+  id: string;
+  title: string;
+  images: GalleryImage[];
+}
+
+export async function resolveGalleryRefs(refs: string[]): Promise<GallerySection[]> {
+  const all = await getCollection('galleries', ({ data }) => !data.draft);
+  const results: GallerySection[] = [];
+
+  for (const ref of refs) {
+    const id = extractIdFromRef(ref);
+    const gallery = all.find((g) => g.id === id);
+    if (!gallery) continue;
+
+    const images = parseGalleryImages(gallery.data.images, gallery.data.title);
+    if (images.length === 0) continue;
+
+    results.push({ id, title: gallery.data.title, images });
+  }
+
+  return results;
+}

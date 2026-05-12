@@ -2,7 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Layout from '@layouts/Layout.astro';
 import GalleryGrid from '@components/GalleryGrid.astro';
-import { resolveGalleryRef } from '@utils/gallery';
+import { resolveGalleryRefs, type GallerySection } from '@utils/gallery';
 
 export async function getStaticPaths() {
   const pages = await getCollection('pages', ({ data }) => !!data.title);
@@ -18,10 +18,9 @@ const { Content } = await render(page);
 
 const hasBody = page.body?.trim().length > 0;
 
-let galleryImages = null;
-if (data.galleryRef) {
-  galleryImages = await resolveGalleryRef(data.galleryRef);
-}
+const gallerySections: GallerySection[] = data.galleryRef
+  ? await resolveGalleryRefs(data.galleryRef)
+  : [];
 ---
 
 <Layout title={data.title} description={data.description}>
@@ -37,11 +36,11 @@ if (data.galleryRef) {
       </div>
     )}
 
-    {galleryImages && galleryImages.length > 0 && (
+    {gallerySections.map((section) => (
       <section class="article-gallery">
-        <h2>Galerie photos</h2>
-        <GalleryGrid items={galleryImages} />
+        <h2>{section.title}</h2>
+        <GalleryGrid items={section.images} galleryId={section.id} />
       </section>
-    )}
+    ))}
   </article>
 </Layout>
