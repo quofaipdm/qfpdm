@@ -14,9 +14,13 @@ content:
         type: select
         default: news
         options:
-          - { value: news,     label: "News (accueil)" }
-          - { value: birbizis, label: Birbizis }
-          - { value: archives, label: Archives }
+          values:
+            - value: news
+              label: "News (accueil)"
+            - value: birbizis
+              label: Birbizis
+            - value: archives
+              label: Archives
       - { name: cover,       label: "Image de couverture (URL ImageKit)",   type: string }
       - { name: coverWidth,  label: "Largeur de l'image (px)",              type: number }
       - { name: coverHeight, label: "Hauteur de l'image (px)",              type: number }
