@@ -1,8 +1,7 @@
 ---
-title: "Tournoi de Carrom - 2005"
-description: ""
-date: 2026-05-12
-cover: "https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Tournoi_Carrom_2005/carrom2.gif?updatedAt=1778564641775"
+title: Tournoi de Carrom - 2005
+date: 2026-05-04
+cover: https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Tournoi_Carrom_2005/carrom2.gif?updatedAt=1778564641775
 coverWidth: 800
 coverHeight: 600
 draft: false
