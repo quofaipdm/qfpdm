@@ -1,8 +1,7 @@
 ---
-title: "Soirée Disco - 2005"
-description: ""
-date: 2026-05-12
-cover: "https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Soir%C3%A9e_Disco_2005/PICT0051.jpg?updatedAt=1778564670193"
+title: Soirée Disco - 2005
+date: 2026-05-06
+cover: https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Soir%C3%A9e_Disco_2005/PICT0051.jpg?updatedAt=1778564670193
 coverWidth: 800
 coverHeight: 600
 draft: false
