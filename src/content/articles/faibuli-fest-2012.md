@@ -2,10 +2,9 @@
 title: Faïbuli' Fest 2012
 date: 2012-09-12
 category: archives
+cover: https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Affiches_anciennes/2012%20FaiBuli%20AffichePetite.jpg?updatedAt=1778564561657
 draft: false
 ---
-
-
 ![](https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Affiches_anciennes/2012%20FaiBuli%20AffichePetite.jpg?updatedAt=1778564561657)
 
 
