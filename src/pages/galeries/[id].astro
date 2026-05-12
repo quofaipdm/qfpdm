@@ -27,14 +27,14 @@ const hasBody = gallery.body?.trim().length > 0;
     <header class="content-header">
       <h1 class="content-title">{data.title}</h1>
       {data.description && <p class="content-description">{data.description}</p>}
-      <p class="content-meta">
+      <!-- <p class="content-meta">
         {data.date.toLocaleDateString('fr-FR', {
           year: 'numeric', month: 'long', day: 'numeric',
         })}
-      </p>
+      </p> -->
     </header>
 
-    {data.cover && (
+    <!-- {data.cover && (
       <Image
         src={data.cover}
         width={1200}
@@ -44,7 +44,7 @@ const hasBody = gallery.body?.trim().length > 0;
         priority
         transformation={[{ width: 1200, quality: 85 }]}
       />
-    )}
+    )} -->
 
     {hasBody && (
       <div class="prose">
