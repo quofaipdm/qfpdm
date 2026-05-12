@@ -44,8 +44,8 @@ content:
         label: Images
         type: list
         fields:
-          - { name: url,    label: "URL ImageKit",              type: string, required: true }
-          - { name: alt,    label: "Texte alternatif",          type: string }
-          - { name: width,  label: "Largeur (px)",              type: number }
-          - { name: height, label: "Hauteur (px)",              type: number }
+          url:    { label: "URL ImageKit",              type: string, required: true }
+          alt:    { label: "Texte alternatif",          type: string }
+          width:  { label: "Largeur (px)",              type: number }
+          height: { label: "Hauteur (px)",              type: number }
       - { name: body,        label: Description détaillée,                   type: rich-text }

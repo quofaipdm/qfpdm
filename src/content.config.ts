@@ -41,7 +41,7 @@ const galleries = defineCollection({
     coverWidth: z.number().optional(),
     coverHeight: z.number().optional(),
     videoUrl: z.string().optional(),
-    images: z.array(imageItem).optional(),
+    images: z.union([z.string(), z.array(z.union([z.string(), imageItem]))]).optional(),
     draft: z.boolean().default(false),
   }),
 });

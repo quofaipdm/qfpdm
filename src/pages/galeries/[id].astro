@@ -16,12 +16,21 @@ const { gallery } = Astro.props;
 const { data } = gallery;
 const { Content } = await render(gallery);
 
-const images = (data.images ?? []).map((img) => ({
-  imageUrl: img.url,
-  alt: img.alt ?? data.title,
-  width: img.width,
-  height: img.height,
-}));
+const norm = data.images ?? [];
+const rawImages: Array<{ imageUrl: string; alt: string; width?: number; height?: number }> = [];
+for (const item of typeof norm === 'string' ? norm.split('\n') : norm) {
+  if (typeof item === 'string') {
+    const url = item.trim();
+    if (url) rawImages.push({ imageUrl: url, alt: data.title });
+  } else if (item?.url) {
+    rawImages.push({
+      imageUrl: item.url,
+      alt: item.alt ?? data.title,
+      width: item.width,
+      height: item.height,
+    });
+  }
+}
 
 const hasBody = gallery.body?.trim().length > 0;
 ---
@@ -56,8 +65,8 @@ const hasBody = gallery.body?.trim().length > 0;
       </div>
     )}
 
-    {images.length > 0
-      ? <GalleryGrid items={images} />
+    {rawImages.length > 0
+      ? <GalleryGrid items={rawImages} />
       : !hasBody && <p>Aucune image dans cette galerie.</p>}
   </article>
 </Layout>
