@@ -1,0 +1,77 @@
+---
+import { getCollection, render } from 'astro:content';
+import { Image } from 'astro:assets';
+import { YouTube, Vimeo } from 'astro-embed';
+import Layout from '@layouts/Layout.astro';
+import GalleryGrid from '@components/GalleryGrid.astro';
+import { resolveGalleryRef } from '@utils/gallery';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles', ({ data }) => !data.draft);
+  return articles.map((a) => ({
+    params: { id: a.id },
+    props: { article: a },
+  }));
+}
+
+const { article } = Astro.props;
+const { data } = article;
+const { Content } = await render(article);
+
+const isYouTube = (url: string) =>
+  url.includes('youtube.com') || url.includes('youtu.be');
+
+const hasBody = article.body?.trim().length > 0;
+
+let galleryImages = null;
+if (data.galleryRef) {
+  galleryImages = await resolveGalleryRef(data.galleryRef);
+}
+---
+
+<Layout title={`${data.title} — Articles`} description={data.description}>
+  <article>
+    <header class="content-header">
+      <h1 class="content-title">{data.title}</h1>
+      {data.description && <p class="content-description">{data.description}</p>}
+      <p class="content-meta">
+        {data.date.toLocaleDateString('fr-FR', {
+          year: 'numeric', month: 'long', day: 'numeric',
+        })}
+      </p>
+    </header>
+
+    {data.cover && (
+      <Image
+        src={data.cover}
+        width={1200}
+        height={600}
+        alt={data.title}
+        layout="full-width"
+        priority
+        transformation={[{ width: 1200, quality: 85 }]}
+      />
+    )}
+
+    {data.videoUrl && (
+      <div class="article-video">
+        {isYouTube(data.videoUrl)
+          ? <YouTube id={data.videoUrl} />
+          : <Vimeo id={data.videoUrl} />}
+      </div>
+    )}
+
+    {hasBody && (
+      <div class="prose">
+        <Content />
+      </div>
+    )}
+
+    {galleryImages && galleryImages.length > 0 && (
+      <section class="article-gallery">
+        <h2>Galerie photos</h2>
+        <GalleryGrid items={galleryImages} />
+      </section>
+    )}
+  </article>
+</Layout>

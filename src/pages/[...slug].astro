@@ -1,0 +1,47 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '@layouts/Layout.astro';
+import GalleryGrid from '@components/GalleryGrid.astro';
+import { resolveGalleryRef } from '@utils/gallery';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages', ({ data }) => !!data.title);
+  return pages.map((p) => ({
+    params: { slug: p.id },
+    props: { page: p },
+  }));
+}
+
+const { page } = Astro.props;
+const { data } = page;
+const { Content } = await render(page);
+
+const hasBody = page.body?.trim().length > 0;
+
+let galleryImages = null;
+if (data.galleryRef) {
+  galleryImages = await resolveGalleryRef(data.galleryRef);
+}
+---
+
+<Layout title={data.title} description={data.description}>
+  <article>
+    <header class="content-header">
+      <h1 class="content-title">{data.title}</h1>
+      {data.description && <p class="content-description">{data.description}</p>}
+    </header>
+
+    {hasBody && (
+      <div class="prose">
+        <Content />
+      </div>
+    )}
+
+    {galleryImages && galleryImages.length > 0 && (
+      <section class="article-gallery">
+        <h2>Galerie photos</h2>
+        <GalleryGrid items={galleryImages} />
+      </section>
+    )}
+  </article>
+</Layout>
