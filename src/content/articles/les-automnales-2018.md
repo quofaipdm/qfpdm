@@ -2,10 +2,9 @@
 title: Les Automnales 2018
 date: 2018-10-12
 category: archives
+cover: https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Affiches_anciennes/2018%20Affiche%20Automnales.jpg?updatedAt=1778564561601
 draft: false
 ---
-
-
 ![](https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Affiches_anciennes/2018%20Affiche%20Automnales.jpg?updatedAt=1778564561601)
 
 
