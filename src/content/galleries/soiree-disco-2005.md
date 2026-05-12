@@ -20,7 +20,7 @@ images: |
   https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Soir%C3%A9e_Disco_2005/PICT0098.jpg?updatedAt=1778564670149
   https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Soir%C3%A9e_Disco_2005/PICT0060.jpg?updatedAt=1778564670186
 ---
-[Disco !]([https://ik.imagekit.io/qfpdm/qfpdm_site/web_assets/miscoldweb/disco.gif?updatedAt=1778506072029](https://ik.imagekit.io/qfpdm/qfpdm_site/web_assets/miscoldweb/disco.gif?updatedAt=1778506072029))
+![Disco !]([https://ik.imagekit.io/qfpdm/qfpdm_site/web_assets/miscoldweb/disco.gif?updatedAt=1778506072029](https://ik.imagekit.io/qfpdm/qfpdm_site/web_assets/miscoldweb/disco.gif?updatedAt=1778506072029))
 
 La 1ère Soirée Funky Disco Party (FDP), c’est déroulée à Solignac en 2004.  
 La 2ème FDP c’est déroulée le Vendredi 6 Mai 2005 au Woodstock Boogie Bar.  
