@@ -5,7 +5,7 @@ date: 2023
 cover: "https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2023_Birbizis_1/2023_Photos/IMG_20231031_132455.jpg?updatedAt=1778565163646"
 coverWidth: 3120
 coverHeight: 4160
-draft: true
+draft: false
 images: |
   https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2023_Birbizis_1/2023_Photos/IMG_20231104_125203.jpg?updatedAt=1778565163645
   https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2023_Birbizis_1/2023_Photos/IMG_20231015_201353.jpg?updatedAt=1778565163613

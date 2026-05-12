@@ -5,7 +5,7 @@ date: 2024
 cover: "https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012300.jpg?updatedAt=1778565134625"
 coverWidth: 4096
 coverHeight: 3072
-draft: true
+draft: false
 images: |
   https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_014601_440.jpg?updatedAt=1778565134649
   https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012326_058.jpg?updatedAt=1778565134629
