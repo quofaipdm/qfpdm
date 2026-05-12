@@ -9,7 +9,14 @@ content:
       - { name: title,       label: Titre,                                  type: string,   required: true }
       - { name: description, label: Résumé (pour le référencement),         type: string }
       - { name: date,        label: Date de publication,                    type: date,     required: true }
-      - { name: category,    label: Catégorie,                              type: select,   options: [{value: news, label: News}, {value: birbizis, label: Birbizis}, {value: archives, label: Archives}], default: news }
+      - name: category
+        label: Catégorie
+        type: select
+        default: news
+        options:
+          - { value: news,     label: "News (accueil)" }
+          - { value: birbizis, label: Birbizis }
+          - { value: archives, label: Archives }
       - { name: cover,       label: "Image de couverture (URL ImageKit)",   type: string }
       - { name: coverWidth,  label: "Largeur de l'image (px)",              type: number }
       - { name: coverHeight, label: "Hauteur de l'image (px)",              type: number }
