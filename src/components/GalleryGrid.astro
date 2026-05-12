@@ -8,7 +8,7 @@ const { items } = Astro.props;
 <div class="gallery-grid pswp-gallery" id="gallery">
   {items.map((item) => (
     <a
-      href={`${item.imageUrl}?tr=w-800`}
+      href={`${item.imageUrl}${item.imageUrl.includes('?') ? '&' : '?'}tr=w-800`}
       data-pswp-width={item.width ?? 0}
       data-pswp-height={item.height ?? 0}
       class="gallery-card"
@@ -33,10 +33,10 @@ const { items } = Astro.props;
   import PhotoSwipeLightbox from 'photoswipe/lightbox';
   import 'photoswipe/style.css';
 
-  let lightbox: PhotoSwipeLightbox | null = null;
+  function initLightbox() {
+    const gallery = document.getElementById('gallery');
+    if (!gallery) return;
 
-  document.addEventListener('astro:page-load', () => {
-    // Fallback dimensions si width/height absents du frontmatter (valeur 0)
     document.querySelectorAll<HTMLAnchorElement>('a.gallery-card').forEach((a) => {
       if (a.dataset.pswpWidth === '0' || a.dataset.pswpHeight === '0') {
         const img = a.querySelector('img');
@@ -52,16 +52,22 @@ const { items } = Astro.props;
       }
     });
 
-    lightbox = new PhotoSwipeLightbox({
+    const lightbox = new PhotoSwipeLightbox({
       gallery: '#gallery',
       children: 'a',
       pswpModule: () => import('photoswipe'),
     });
-    lightbox.init();
-  });
 
-  document.addEventListener('astro:before-swap', () => {
-    lightbox?.destroy();
-    lightbox = null;
-  });
+    document.addEventListener('astro:before-swap', () => {
+      lightbox.destroy();
+    });
+
+    lightbox.init();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLightbox);
+  } else {
+    initLightbox();
+  }
 </script>
