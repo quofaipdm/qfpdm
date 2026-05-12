@@ -1,12 +1,12 @@
 ---
-title: "Soirée Disco 2005"
-description: "Une soirée disco mémorable organisée à Solignac."
+title: Soirée Disco 2005
+description: Une soirée disco mémorable organisée à Solignac.
 date: 2005-01-15
 category: archives
 cover: https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2023_Birbizis_1/2023_Photos/IMG_20231030_185938.jpg?updatedAt=1778565163611
+galleryRef: https://qfpdm.pages.dev/galeries/soiree-disco-2005/
 draft: false
 ---
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 ## La soirée
