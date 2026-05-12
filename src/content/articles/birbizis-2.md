@@ -11,8 +11,6 @@ galleryRef: |-
   https://qfpdm.pages.dev/galeries/birbizis-2024-tournoi-palets
 draft: false
 ---
-
-
 ![](https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Affiches/2024%20affiches/2024%20birbizis%202%20fin.jpg?updatedAt=1778565151137)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -22,7 +20,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ![](https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Affiches/2024%20affiches/2024%20kloog_26095.jpg?updatedAt=1778565151169)
-
 ![](https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Affiches/2024%20affiches/2024%20AfficheEclosion.jpg?updatedAt=1778565151146)
 
 ### Nouveautés
