@@ -1,3 +1,10 @@
+media:
+  - name: content_images
+    label: Images
+    input: media/images
+    output: /media/images
+    extensions: [jpg, jpeg, png, webp, gif]
+
 content:
   - name: articles
     label: Articles
@@ -27,7 +34,13 @@ content:
       - { name: videoUrl,    label: "Vidéo (URL YouTube ou Vimeo)",         type: string }
       - { name: galleryRef,  label: "Galerie associée — coller l'URL complète de la galerie (ex: https://qfpdm.pages.dev/galeries/2026-05-12...)", type: string }
       - { name: draft,       label: Brouillon,                              type: boolean,  default: true }
-      - { name: body,        label: Contenu,                                type: rich-text }
+      - name: body
+        label: Contenu
+        type: rich-text
+        options:
+          media: content_images
+          format: markdown
+          switcher: true
 
   - name: pages
     label: Pages
@@ -37,7 +50,13 @@ content:
       - { name: title,       label: Titre,            type: string,   required: true }
       - { name: description, label: Description SEO,  type: string }
       - { name: galleryRef,  label: "Galerie associée", type: string }
-      - { name: body,        label: Contenu,           type: rich-text }
+      - name: body
+        label: Contenu
+        type: rich-text
+        options:
+          media: content_images
+          format: markdown
+          switcher: true
 
   - name: galleries
     label: Galeries
@@ -62,4 +81,10 @@ content:
           alt:    { label: "Texte alternatif",          type: string }
           width:  { label: "Largeur (px)",              type: number }
           height: { label: "Hauteur (px)",              type: number }
-      - { name: body,        label: Description détaillée,                   type: rich-text }
+      - name: body
+        label: Description détaillée
+        type: rich-text
+        options:
+          media: content_images
+          format: markdown
+          switcher: true

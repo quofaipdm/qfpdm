@@ -26,3 +26,6 @@ pnpm-debug.log*
 # dev phase
 .vscode/
 dev/
+
+# media uploads (use ImageKit instead)
+media/
