@@ -1,0 +1,43 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  aspectRatio?: number;
+  loading?: 'lazy' | 'eager';
+  priority?: boolean;
+}
+
+const {
+  src, alt,
+  width: _origW, height: _origH,
+  aspectRatio = 16 / 9,
+  loading = 'lazy',
+  priority = false,
+} = Astro.props;
+
+const CARD_MAX_W = 800;
+const displayW = CARD_MAX_W;
+const displayH = Math.round(CARD_MAX_W / aspectRatio);
+---
+{src && (
+  <Image
+    src={src}
+    width={displayW}
+    height={displayH}
+    alt={alt}
+    class="card-cover"
+    layout="constrained"
+    loading={loading}
+    decoding="async"
+    transformation={[{
+      width: displayW,
+      height: displayH,
+      quality: 85,
+      focus: 'auto',
+    }]}
+  />
+)}
