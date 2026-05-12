@@ -3,6 +3,7 @@ title: Rencontre de jongleurs 2007
 description: Rencontre de jongleurs 2007
 date: 2007-09-12
 category: archives
+cover: https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Affiches_anciennes/2007%20affiche%20rencontre%20jongleurs.jpg?updatedAt=1778564561645
 draft: false
 ---
 ![affiche jongle 2007](https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Affiches_anciennes/2007%20affiche%20rencontre%20jongleurs.jpg?updatedAt=1778564561645)
@@ -44,6 +45,8 @@ Matin : **Atelier jongle** : Chacun retrouve sa discipline favorite et échang
 
 
 Voilà quelques liens où vous pourrez trouver des photos de l'évenement :  
+
 - le site de **[THOUM**](http://lethoum.free.fr/photos/photos/index.php?/vignette-0-St_Priest_2007.html)  
 - le site de **[STEPH**](http://cyberdada.free.fr/photos/index.php?cat=78)  
 - les vidéos de AnneSO : **[ICI](http://www.dailymotion.com/video/x30vi4_gladiator-st-priest_creation)** ou encore **[LA](http://www.dailymotion.com/video/x30vl7_endurance-5-massues-jeux-de-la-jong_creation)** ou bien **[ICI](http://www.dailymotion.com/video/x30vof_endurance-5-massues-jeux-de-la-jong_creation)**
+
