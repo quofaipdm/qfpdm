@@ -1,8 +1,7 @@
 ---
-title: "Birbizis 2 - Photos 2024"
-description: ""
-date: 2026-05-12
-cover: "https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240929_152756_406.jpg?updatedAt=1778565144086"
+title: Birbizis 2 - Photos 2024
+date: 2026-05-11
+cover: https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240929_152756_406.jpg?updatedAt=1778565144086
 coverWidth: 3120
 coverHeight: 4160
 draft: false
