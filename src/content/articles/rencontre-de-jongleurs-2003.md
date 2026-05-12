@@ -3,6 +3,8 @@ title: Rencontre de jongleurs 2003
 description: Rencontre de jongleurs 2003
 date: 2003-09-12
 category: archives
+cover: https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Affiches_anciennes/2003%20affiche%20rencontre%20jongl.jpg?updatedAt=1778564561676
 draft: false
 ---
-<img src="https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Affiches_anciennes/2003%20affiche%20rencontre%20jongl.jpg?updatedAt=1778564561676" alt="">
+![](https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Affiches_anciennes/2003%20affiche%20rencontre%20jongl.jpg?updatedAt=1778564561676)
+
