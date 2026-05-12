@@ -22,19 +22,20 @@ content:
               label: Birbizis
             - value: archives
               label: Archives
-      - { name: cover,       label: "Image de couverture (URL ImageKit)",   type: string }
+      - { name: cover,       label: "Image de couverture (URL ImageKit)",   type: string,   description: "Copiez l'URL depuis ImageKit → Media Library → clic sur l'image → panneau de droite" }
       - { name: coverWidth,  label: "Largeur de l'image (px)",              type: number }
-      - { name: coverHeight, label: "Hauteur de l'image (px)",              type: number }
-      - { name: videoUrl,    label: "Vidéo (URL YouTube ou Vimeo)",         type: string }
+      - { name: coverHeight, label: "Hauteur de l'image (px)",              type: number,   description: "Optionnel. Dimensions visibles dans ImageKit → clic sur l'image → panneau Width / Height" }
+      - { name: videoUrl,    label: "Vidéo (URL YouTube ou Vimeo)",         type: string,   description: "YouTube: https://youtube.com/watch?v=... ou Vimeo: https://vimeo.com/..." }
       - name: galleryRef
         label: "Galeries associées"
         type: list
         fields:
-          - { name: url, label: "URL complète de la galerie", type: string }
+          - { name: url, label: "URL complète de la galerie", type: string, description: "Collez l'URL depuis la barre d'adresse du site (ex: https://qfpdm.pages.dev/galeries/mon-evenement/)" }
       - { name: draft,       label: Brouillon,                              type: boolean,  default: true }
       - name: body
         label: Contenu
         type: rich-text
+        description: "Images: ![](url) dans l'éditeur visuel. 2+ images à la suite = grille automatique. Mode Source: <img src=\"\" alt=\"\">"
         options:
           format: markdown
           switcher: true
@@ -50,10 +51,11 @@ content:
         label: "Galeries associées"
         type: list
         fields:
-          - { name: url, label: "URL complète de la galerie", type: string }
+          - { name: url, label: "URL complète de la galerie", type: string, description: "Collez l'URL depuis la barre d'adresse du site (ex: https://qfpdm.pages.dev/galeries/mon-evenement/)" }
       - name: body
         label: Contenu
         type: rich-text
+        description: "Images: ![](url) dans l'éditeur visuel. 2+ images à la suite = grille automatique. Mode Source: <img src=\"\" alt=\"\">"
         options:
           format: markdown
           switcher: true
@@ -68,14 +70,15 @@ content:
       - { name: title,       label: Nom de la galerie,                        type: string,   required: true }
       - { name: description, label: Description,                              type: string }
       - { name: date,        label: "Date de l'événement",                   type: date,     required: true }
-      - { name: cover,       label: "Photo de couverture (URL ImageKit)",     type: string,   required: true }
+      - { name: cover,       label: "Photo de couverture (URL ImageKit)",     type: string,   required: true, description: "Copiez l'URL depuis ImageKit → Media Library → clic sur l'image → panneau de droite" }
       - { name: coverWidth,  label: "Largeur de la couverture (px)",          type: number }
-      - { name: coverHeight, label: "Hauteur de la couverture (px)",          type: number }
-      - { name: videoUrl,    label: "Vidéo de résumé (URL YouTube ou Vimeo)", type: string }
+      - { name: coverHeight, label: "Hauteur de la couverture (px)",          type: number,   description: "Optionnel. Dimensions visibles dans ImageKit → clic sur l'image → panneau Width / Height" }
+      - { name: videoUrl,    label: "Vidéo de résumé (URL YouTube ou Vimeo)", type: string,   description: "YouTube: https://youtube.com/watch?v=... ou Vimeo: https://vimeo.com/..." }
       - { name: draft,       label: Brouillon,                                type: boolean,  default: true }
       - name: images
         label: Images
         type: list
+        description: "Une URL ImageKit par ligne. alt, largeur et hauteur optionnels"
         fields:
           url:    { label: "URL ImageKit",              type: string, required: true }
           alt:    { label: "Texte alternatif",          type: string }
@@ -84,6 +87,7 @@ content:
       - name: body
         label: Description détaillée
         type: rich-text
+        description: "Images: ![](url) dans l'éditeur visuel. 2+ images à la suite = grille automatique. Mode Source: <img src=\"\" alt=\"\">"
         options:
           format: markdown
           switcher: true

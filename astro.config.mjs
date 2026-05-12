@@ -2,11 +2,16 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import imagekit from '@imagekit/astro/integration';
 import icon from 'astro-icon';
+import rehypeImageGrid from './src/utils/rehype-image-grid';
 
 export default defineConfig({
   site: 'https://qfpdm.pages.dev',  // à changer lors du deployment prod
 
   output: 'static',
+
+  markdown: {
+    rehypePlugins: [rehypeImageGrid],
+  },
   // Pas d'adaptateur @astrojs/cloudflare : site 100% statique.
   // Cloudflare Pages sert dist/ directement.
 
