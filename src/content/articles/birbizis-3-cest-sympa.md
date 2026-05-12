@@ -7,4 +7,15 @@ cover: https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Pho
 galleryRef: https://qfpdm.pages.dev/galeries/birbizis-2025-photos/
 draft: false
 ---
+
+
+![](https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Affiches/2025%20prog%20birbizis3%20f.jpg?updatedAt=1778565083158)
+
+
+
+&nbsp;
+
+![](https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Affiches/2025%20programme%20birbizis%20v3.jpg?updatedAt=1778565083173)
+
 Une bien belle édition.
+
