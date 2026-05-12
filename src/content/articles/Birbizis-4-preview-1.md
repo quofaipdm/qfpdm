@@ -3,6 +3,7 @@ title: "Birbizis #4 "
 description: "Festival Birbizis #4 "
 date: 2026-05-01
 category: news
+cover: https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2026_Birbizis_4/2026_promo/2025_festival-birbizis-4-878427-1200-0.webp
 draft: false
 ---
 # On vous prépare le
