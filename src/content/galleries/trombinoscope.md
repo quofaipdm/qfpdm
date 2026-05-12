@@ -1,8 +1,7 @@
 ---
-title: "Trombinoscope des OG"
-description: ""
-date: 2026-05-12
-cover: "https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Trombinoscope_og/anthony.jpg?updatedAt=1778564601324"
+title: Trombinoscope des OG
+date: 2026-05-01
+cover: https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Trombinoscope_og/anthony.jpg?updatedAt=1778564601324
 coverWidth: 800
 coverHeight: 554
 draft: false
