@@ -2,31 +2,41 @@
 import { Image } from 'astro:assets';
 
 const { items } = Astro.props;
-// items: Array<{ imageUrl: string; alt: string; width?: number; height?: number }>
+
+function getImageSize(w: number | undefined, h: number | undefined) {
+  if (w && h) {
+    const targetW = Math.min(800, w);
+    return { w: targetW, h: Math.round(h * (targetW / w)) };
+  }
+  return { w: undefined, h: undefined };
+}
 ---
 
 <div class="gallery-grid pswp-gallery" id="gallery">
-  {items.map((item) => (
-    <a
-      href={`${item.imageUrl}${item.imageUrl.includes('?') ? '&' : '?'}tr=w-800`}
-      data-pswp-width={item.width ?? 0}
-      data-pswp-height={item.height ?? 0}
-      class="gallery-card"
-    >
-      {item.imageUrl && (
-        <Image
-          src={item.imageUrl}
-          width={400}
-          height={300}
-          alt={item.alt}
-          layout="constrained"
-          loading="lazy"
-          decoding="async"
-          transformation={[{ width: 400, height: 300, quality: 80 }]}
-        />
-      )}
-    </a>
-  ))}
+  {items.map((item) => {
+    const size = getImageSize(item.width, item.height);
+    return (
+      <a
+        href={`${item.imageUrl}${item.imageUrl.includes('?') ? '&' : '?'}tr=w-800`}
+        data-pswp-width={size.w ?? 0}
+        data-pswp-height={size.h ?? 0}
+        class="gallery-card"
+      >
+        {item.imageUrl && (
+          <Image
+            src={item.imageUrl}
+            width={400}
+            height={300}
+            alt={item.alt}
+            layout="constrained"
+            loading="lazy"
+            decoding="async"
+            transformation={[{ width: 400, height: 300, quality: 80 }]}
+          />
+        )}
+      </a>
+    );
+  })}
 </div>
 
 <script>
@@ -37,18 +47,16 @@ const { items } = Astro.props;
     const gallery = document.getElementById('gallery');
     if (!gallery) return;
 
-    document.querySelectorAll<HTMLAnchorElement>('a.gallery-card').forEach((a) => {
+    const cards = document.querySelectorAll<HTMLAnchorElement>('a.gallery-card');
+
+    cards.forEach((a) => {
       if (a.dataset.pswpWidth === '0' || a.dataset.pswpHeight === '0') {
-        const img = a.querySelector('img');
-        if (img) {
-          const set = () => {
-            if (img.naturalWidth) {
-              a.dataset.pswpWidth  = String(img.naturalWidth);
-              a.dataset.pswpHeight = String(img.naturalHeight);
-            }
-          };
-          img.complete ? set() : img.addEventListener('load', set);
-        }
+        const img = new Image();
+        img.onload = () => {
+          a.dataset.pswpWidth = String(img.naturalWidth);
+          a.dataset.pswpHeight = String(img.naturalHeight);
+        };
+        img.src = a.href;
       }
     });
 
@@ -57,9 +65,9 @@ const { items } = Astro.props;
       children: 'a',
 
       initialZoomLevel: 'fill',
-      secondaryZoomLevel: 1,
-      maxZoomLevel: 2,
-      
+      secondaryZoomLevel: (z) => z.fit,
+      maxZoomLevel: (z) => z.fill * 2,
+
       pswpModule: () => import('photoswipe'),
     });
 
