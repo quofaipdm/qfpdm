@@ -21,7 +21,9 @@ const articles = defineCollection({
       .optional()
       .transform(v => v === undefined
         ? undefined
-        : (Array.isArray(v) ? v : [v]).map(s => decodeEntities(s))),
+        : (Array.isArray(v) ? v : [v])
+            .flatMap(s => s.split('\n').map(t => t.trim()).filter(Boolean))
+            .map(s => decodeEntities(s))),
     draft: z.boolean().default(false),
   }),
 });
@@ -35,7 +37,9 @@ const pages = defineCollection({
       .optional()
       .transform(v => v === undefined
         ? undefined
-        : (Array.isArray(v) ? v : [v]).map(s => decodeEntities(s))),
+        : (Array.isArray(v) ? v : [v])
+            .flatMap(s => s.split('\n').map(t => t.trim()).filter(Boolean))
+            .map(s => decodeEntities(s))),
   }),
 });
 
