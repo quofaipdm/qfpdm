@@ -5,7 +5,7 @@ import icon from 'astro-icon';
 import rehypeImageGrid from './src/utils/rehype-image-grid';
 
 export default defineConfig({
-  site: 'https://qfpdm.pages.dev',  // à changer lors du deployment prod
+  site: 'https://quofai.org',
 
   output: 'static',
 

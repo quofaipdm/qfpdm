@@ -30,7 +30,7 @@ content:
         label: "Galeries associées"
         type: list
         fields:
-          - { name: url, label: "URL complète de la galerie", type: string, description: "Collez l'URL depuis la barre d'adresse du site (ex: https://qfpdm.pages.dev/galeries/mon-evenement/)" }
+          - { name: url, label: "URL complète de la galerie", type: string, description: "Collez l'URL depuis la barre d'adresse du site (ex: https://quofai.org/galeries/mon-evenement/)" }
       - { name: draft,       label: Brouillon,                              type: boolean,  default: true }
       - name: body
         label: Contenu
@@ -51,7 +51,7 @@ content:
         label: "Galeries associées"
         type: list
         fields:
-          - { name: url, label: "URL complète de la galerie", type: string, description: "Collez l'URL depuis la barre d'adresse du site (ex: https://qfpdm.pages.dev/galeries/mon-evenement/)" }
+          - { name: url, label: "URL complète de la galerie", type: string, description: "Collez l'URL depuis la barre d'adresse du site (ex: https://quofai.org/galeries/mon-evenement/)" }
       - name: body
         label: Contenu
         type: rich-text
