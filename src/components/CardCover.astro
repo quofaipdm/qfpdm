@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from '@unpic/astro';
 
 interface Props {
   src: string;
@@ -33,11 +33,7 @@ const displayH = Math.round(CARD_MAX_W / aspectRatio);
     layout="constrained"
     loading={loading}
     decoding="async"
-    transformation={[{
-      width: displayW,
-      height: displayH,
-      quality: 85,
-      focus: 'auto',
-    }]}
+    cdn="cloudflare"
+    options={{ cloudflare: { domain: "media.quofai.org" } }}
   />
 )}

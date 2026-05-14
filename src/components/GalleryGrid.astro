@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from '@unpic/astro';
 
 const { items, galleryId = 'gallery' } = Astro.props;
 
@@ -17,7 +17,7 @@ function getImageSize(w: number | undefined, h: number | undefined) {
     const size = getImageSize(item.width, item.height);
     return (
       <a
-        href={`${item.imageUrl}${item.imageUrl.includes('?') ? '&' : '?'}tr=w-800`}
+        href={`${item.imageUrl}${item.imageUrl.includes('?') ? '&' : '?'}tr=w-1600`}
         data-pswp-width={size.w ?? 0}
         data-pswp-height={size.h ?? 0}
         class="gallery-card"
@@ -31,7 +31,8 @@ function getImageSize(w: number | undefined, h: number | undefined) {
             layout="constrained"
             loading="lazy"
             decoding="async"
-            transformation={[{ width: 400, height: 300, quality: 80 }]}
+            cdn="cloudflare"
+            options={{ cloudflare: { domain: "media.quofai.org" } }}
           />
         )}
       </a>
