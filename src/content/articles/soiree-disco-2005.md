@@ -3,7 +3,7 @@ title: Soirée Disco 2005
 description: Une soirée disco mémorable organisée à Solignac.
 date: 2005-01-15
 category: archives
-cover: https://ik.imagekit.io/qfpdm/qfpdm_site/Birbizis/2023_Birbizis_1/2023_Photos/IMG_20231030_185938.jpg?updatedAt=1778565163611
+cover: https://media.quofai.org/qfpdm_site/Birbizis/2023_Birbizis_1/2023_Photos/IMG_20231030_185938.jpg?updatedAt=1778565163611
 galleryRef: https://qfpdm.pages.dev/galeries/soiree-disco-2005/
 draft: false
 ---

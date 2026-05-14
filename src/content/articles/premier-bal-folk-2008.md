@@ -2,7 +2,7 @@
 title: Premier Bal Folk 2008
 date: 2008-11-12
 category: archives
-cover: https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Vrac_des_archives/folk%20oueb.jpg
+cover: https://media.quofai.org/qfpdm_site/a_l_ancienne/Vrac_des_archives/folk%20oueb.jpg
 draft: false
 ---
 Pour fêter cette rencontre de jongleurs réussie, nous organisons un bal folk à Nexon  
@@ -11,6 +11,6 @@ tu ne sais pas danser, tu as peur de marcher sur les pieds de ta charmante caval
 puis bal dés 21h00 pour mettre en pratique tous ça  
 venez nombreux !
 
-![](https://ik.imagekit.io/qfpdm/qfpdm_site/a_l_ancienne/Vrac_des_archives/folk%20oueb.jpg)
+![](https://media.quofai.org/qfpdm_site/a_l_ancienne/Vrac_des_archives/folk%20oueb.jpg)
 
 Ce premier Bal Folk organisé par l'asso a été une belle réussite puisqu'une centaine de personnes ont répondu à l'appel malgré les vacances scolaires et ce jour férié. En tout cas merci à tous et nous devrions sûrement remettre ça un jour, après un de nos fameux tournois de carrom donc tenez vous informé...
