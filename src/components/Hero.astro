@@ -1,0 +1,20 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  ctaHref?: string;
+  ctaLabel?: string;
+}
+
+const { title, subtitle, ctaHref, ctaLabel } = Astro.props;
+---
+
+<section class="hero">
+  <div class="hero-body">
+    <h1 class="hero-title">{title}</h1>
+    {subtitle && <p class="hero-subtitle">{subtitle}</p>}
+    {ctaHref && ctaLabel && (
+      <a href={ctaHref} class="btn btn-primary hero-cta">{ctaLabel}</a>
+    )}
+  </div>
+</section>
