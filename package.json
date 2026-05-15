@@ -22,7 +22,10 @@
     "photoswipe": "^5.4.4"
   },
   "overrides": {
-    "vite": "^7"
+    "vite": "^7",
+    "@unpic/astro": {
+      "astro": "$astro"
+    }
   },
   "devDependencies": {
     "lightningcss": "^1.32.0"
