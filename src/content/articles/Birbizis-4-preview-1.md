@@ -6,9 +6,7 @@ category: news
 cover: https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_promo/2025_festival-birbizis-4-878427-1200-0.webp
 draft: false
 ---
-# On vous prépare le
-
-# **Festival Birbizis #4**
+# On vous prépare le **Festival Birbizis #4**
 
 **Du 18/09/2026 au 20/09/2026**
 
@@ -16,9 +14,8 @@ draft: false
 
 Festival tout public à prix libre, **Birbizis #4** vous donne rendez-vous pour célébrer la rentrée dans une ambiance conviviale et festive !
 
-![Festival Birbizis #4](https://www.jds.fr/medias/image/festival-birbizis-4-878427-1200-0.webp)
+![^© Nico Abel - Festival Birbizis #4](https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_promo/2025_festival-birbizis-4-878427-1200-0.webp)
 
-*[© Nico Abel Festival Birbizis #4](https://www.jds.fr/medias/image/festival-birbizis-4-878427-920-0-F.webp "Festival Birbizis #4 &copy; Nico Abel")*
 
 Proposé par Quo Faï Pas de Mau, ce week-end s’annonce riche en découvertes avec une programmation éclectique :
 

@@ -124,6 +124,39 @@
     }
   }
 
+  & figure {
+    margin-block: var(--spacing-xl);
+    text-align: center;
+  }
+
+  & figure img,
+  & figure video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: var(--border-radius-md);
+  }
+
+  & figcaption {
+    margin-top: var(--spacing-sm);
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    font-style: italic;
+    text-align: center;
+  }
+
+  & video,
+  & audio {
+    display: block;
+    max-width: 100%;
+    margin-block: var(--spacing-xl);
+  }
+
+  & audio {
+    width: 100%;
+  }
+
   & img {
     border-radius: var(--border-radius-md);
     margin-block: var(--spacing-xl);
