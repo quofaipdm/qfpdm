@@ -3,10 +3,10 @@ title: Rencontre de jongleurs 2007
 description: Rencontre de jongleurs 2007
 date: 2007-09-12
 category: archives
-cover: https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2007%20affiche%20rencontre%20jongleurs.jpg?updatedAt=1778564561645
+cover: https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2007%20affiche%20rencontre%20jongleurs.jpg
 draft: false
 ---
-![affiche jongle 2007](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2007%20affiche%20rencontre%20jongleurs.jpg?updatedAt=1778564561645)
+![affiche jongle 2007](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2007%20affiche%20rencontre%20jongleurs.jpg)
 
 La 5° édition aura bien lieu du 14 au 16 septembre 2007 toujours à Saint Priest Ligoure. Ouverture du site à 14h00 le vendredi. Si tout va bien, Spectacle jeune public l'aprés midi avec Du grenier au jardin. Le vendredi soir: cabaret cirque carte blanche à Du grenier au jardin et à nos jongleurs limousin...aprés concert avec certainement Santa Macheiro Orchestar Le samedi à 14h30: Bazar Forain (spectacle) puis jeux de la jongle, puis scène ouverte. Le samedi soir: Nouveau Numéro solo de Morgan et le cirque sans noms puis Battle de DJ Le dimanche à 14h30: Bazar Forain puis jeux de la jongle... Michelle reprend les fourneaux: au menu lasagne, roti de porc cul noir, purée maison de pommes de terre nouvelles, boeuf bourguignon, sauté de veau, salade, clafouties...les légumes, la viande et le pain seront fournis par des paysans locaux... Le concours de confiture maison pour les ptits déj est relancé! 
 

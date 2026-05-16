@@ -2,10 +2,10 @@
 title: Rencontre de jongleurs 2008
 date: 2008-09-12
 category: archives
-cover: https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2008%20affiche%20rencontre%20jongleurs.jpg?updatedAt=1778564561583
+cover: https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2008%20affiche%20rencontre%20jongleurs.jpg
 draft: false
 ---
-![](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2008%20affiche%20rencontre%20jongleurs.jpg?updatedAt=1778564561583)
+![](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2008%20affiche%20rencontre%20jongleurs.jpg)
 
 La rencontre de jongleurs de saint Priest-Ligoure remet ça !
 

@@ -1,21 +1,21 @@
 ---
 title: Birbizis 2 - Tournoi Palets 2024
 date: 2026-05-09
-cover: https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012300.jpg?updatedAt=1778565134625
+cover: https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012300.jpg
 coverWidth: 4096
 coverHeight: 3072
 draft: false
 images: |
-  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_014601_440.jpg?updatedAt=1778565134649
-  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012326_058.jpg?updatedAt=1778565134629
-  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012318_134.jpg?updatedAt=1778565134633
-  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012139.jpg?updatedAt=1778565134623
-  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_011708_091.jpg?updatedAt=1778565134621
-  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012309.jpg?updatedAt=1778565134635
-  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012124.jpg?updatedAt=1778565134642
-  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_014555.jpg?updatedAt=1778565134627
-  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012111.jpg?updatedAt=1778565134637
-  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_014558.jpg?updatedAt=1778565134662
-  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012249.jpg?updatedAt=1778565134645
-  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012300.jpg?updatedAt=1778565134625
+  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_014601_440.jpg
+  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012326_058.jpg
+  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012318_134.jpg
+  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012139.jpg
+  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_011708_091.jpg
+  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012309.jpg
+  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012124.jpg
+  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_014555.jpg
+  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012111.jpg
+  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_014558.jpg
+  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012249.jpg
+  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012300.jpg
 ---

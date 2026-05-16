@@ -3,10 +3,10 @@ title: Soirée Cabaret Concert DECIB'ELLES
 description: Concert DECIB'ELLES
 date: 2006-02-11
 category: archives
-cover: https://media.quofai.org/qfpdm_site/a_l_ancienne/Vrac_des_archives/decibelles.jpg?updatedAt=1778601693572
+cover: https://media.quofai.org/qfpdm_site/a_l_ancienne/Vrac_des_archives/decibelles.jpg
 draft: false
 ---
-![Concert Décib'elles](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2006%20decibelles.jpg?updatedAt=1778564561554)
+![Concert Décib'elles](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2006%20decibelles.jpg)
 
  Parce que la scène musicale française actuelle regorge de quelques groupes féminins de caractère, l’Association QUO FAI PAS DE MAU !("ça fait pas d’mal!" en patois limousin) organise le Samedi 11 Février 2006 au CCM John Lennon à Limoges un pur concert de filles !!
 

@@ -2,12 +2,12 @@
 title: Les Automnales 2020
 date: 2020-10-12
 category: archives
-cover: https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2020%20automnales%20Prog_01-01.jpg?updatedAt=1778564561668
+cover: https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2020%20automnales%20Prog_01-01.jpg
 draft: false
 ---
-![](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2020%20automnales%20Prog_01-01.jpg?updatedAt=1778564561668)
+![](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2020%20automnales%20Prog_01-01.jpg)
 
 
 
-![](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2020%20automnales%20Prog_01-02.jpg?updatedAt=1778564561663)
+![](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2020%20automnales%20Prog_01-02.jpg)
 
