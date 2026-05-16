@@ -14,7 +14,7 @@ html {
 body {
   min-height: 100vh;
   line-height: 1.5;
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   color: var(--color-text);
   background-color: var(--color-background);
 }
@@ -45,4 +45,13 @@ a {
 ul,
 ol {
   list-style: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
 }

@@ -1,5 +1,5 @@
 ---
-title: "Birbizis #1 — Les premiers Birbizis"
+title: "Birbizis #1 — Premiers Birbizis"
 description: Première édition des Birbizis, un week-end de rencontres et de partage.
 date: 2023-10-15
 category: birbizis

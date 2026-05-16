@@ -22,24 +22,24 @@
 }
 
 .btn-primary {
-  background-color: var(--color-primary);
-  color: #ffffff;
-  border-color: var(--color-primary);
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  border-color: var(--color-btn-bg);
 
   &:hover {
-    background-color: var(--color-primary-hover);
-    border-color: var(--color-primary-hover);
+    background-color: var(--color-btn-bg-hover);
+    border-color: var(--color-btn-bg-hover);
   }
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+  color: var(--color-btn-bg);
+  border-color: var(--color-btn-bg);
 
   &:hover {
-    background-color: var(--color-primary);
-    color: #ffffff;
+    background-color: var(--color-btn-bg);
+    color: var(--color-btn-text);
   }
 }
 

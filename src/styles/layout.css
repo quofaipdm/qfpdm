@@ -6,7 +6,7 @@
 
 .site-main {
   flex: 1;
-  padding-block: var(--spacing-xl);
+  padding: var(--spacing-xl) var(--spacing-lg);
 }
 
 /* ─── Header ────────────────────────────────────────────────────── */
@@ -27,7 +27,7 @@
 }
 
 .site-logo {
-  font-family: var(--font-serif);
+  font-family: var(--font-body);
   font-size: 1.25rem;
   font-weight: 700;
   text-decoration: none;

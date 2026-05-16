@@ -8,7 +8,9 @@ const galleries = (await getCollection('galleries', ({ data }) => !data.draft))
 ---
 
 <Layout title="Galeries — Quo Faï Pas De Mau" description="Les galeries photos">
-  <h1 class="content-title">Galeries</h1>
+  <header class="content-header">
+    <h1 class="content-title">Galeries</h1>
+  </header>
 
   {galleries.length === 0 && <p>Aucune galerie pour le moment.</p>}
 

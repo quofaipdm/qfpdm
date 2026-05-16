@@ -8,7 +8,9 @@ const articles = (await getCollection('articles', ({ data }) => !data.draft && d
 ---
 
 <Layout title="Articles — Quo Faï Pas De Mau" description="Tous les articles de l'association">
-  <h1 class="content-title">Articles</h1>
+  <header class="content-header">
+    <h1 class="content-title">Articles</h1>
+  </header>
 
   {articles.length === 0 && <p>Aucun article pour le moment.</p>}
 

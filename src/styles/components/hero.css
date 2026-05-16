@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  color: #ffffff;
+  color: var(--color-hero-text);
   padding: var(--spacing-2xl) var(--spacing-lg);
   margin-bottom: var(--spacing-2xl);
   border-radius: var(--border-radius-lg);
@@ -14,7 +14,7 @@
 }
 
 .hero-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: clamp(2rem, 6vw, 3.5rem);
   line-height: 1.1;
   margin-bottom: var(--spacing-md);
@@ -27,12 +27,11 @@
 }
 
 .hero-cta {
-  background-color: #ffffff;
-  color: var(--color-primary);
-  border-color: #ffffff;
+  background-color: var(--color-hero-action);
+  color: var(--color-hero-action-text);
+  border-color: var(--color-hero-action);
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-color: rgba(255, 255, 255, 0.9);
+    opacity: 0.85;
   }
 }

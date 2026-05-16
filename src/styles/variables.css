@@ -1,18 +1,29 @@
-/* ─── Thème par défaut (clair) ──────────────────────────────────── */
-/* Adapter aux couleurs de la charte graphique de l'association      */
+/* ─── Polices globales (valeurs par défaut, surchargeables par thème) */
+:root {
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body:    'Source Serif 4', Georgia, serif;
+  --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --color-btn-text:        #ffffff;
+  --color-btn-bg:          var(--color-primary);
+  --color-btn-bg-hover:    var(--color-primary-hover);
+
+  --color-hero-text:       #ffffff;
+  --color-hero-action:     #ffffff;
+  --color-hero-action-text: var(--color-primary);
+}
+
+/* ─── Thème par défaut (clair) — chaleureux, accueillant ────────── */
 :root,
 [data-theme="light"] {
-  --color-primary:        #3b82f6;
-  --color-primary-hover:  #2563eb;
-  --color-secondary:      #10b981;
-  --color-background:     #ffffff;
-  --color-surface:        #f9fafb;
-  --color-text:           #1f2937;
-  --color-text-light:     #6b7280;
-  --color-border:         #e5e7eb;
-
-  --font-sans:  'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-serif: 'Lora', Georgia, serif;
+  --color-primary:        #b45309;
+  --color-primary-hover:  #92400e;
+  --color-secondary:      #0891b2;
+  --color-background:     #fffcf5;
+  --color-surface:        #faf5ef;
+  --color-text:           #1c1917;
+  --color-text-light:     #78716c;
+  --color-border:         #e7e5e4;
 
   --spacing-xs:  0.25rem;
   --spacing-sm:  0.5rem;
@@ -33,46 +44,98 @@
   --gallery-lightbox-bg: rgb(0 0 0 / 0.92);
 }
 
-/* ─── Thème sombre ──────────────────────────────────────────────── */
+/* ─── Thème sombre — chaleureux, pas froid ──────────────────────── */
 [data-theme="dark"] {
-  --color-primary:        #60a5fa;
-  --color-primary-hover:  #93c5fd;
-  --color-secondary:      #34d399;
-  --color-background:     #111827;
-  --color-surface:        #1f2937;
-  --color-text:           #f9fafb;
-  --color-text-light:     #9ca3af;
-  --color-border:         #374151;
+  --color-primary:        #fbbf24;
+  --color-primary-hover:  #fcd34d;
+  --color-btn-text:       #1c1917;
+  --color-secondary:      #22d3ee;
+  --color-background:     #1c1917;
+  --color-surface:        #292524;
+  --color-text:           #faf5ef;
+  --color-text-light:     #a8a29e;
+  --color-border:         #44403c;
 
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4);
 }
 
-/* ─── Exemple : thème "forêt" ───────────────────────────────────── */
-/* Dupliquer ce bloc pour créer un nouveau thème                     */
+/* ─── Thème forêt — naturel, profond, classique ─────────────────── */
 [data-theme="foret"] {
-  --color-primary:        #16a34a;
-  --color-primary-hover:  #15803d;
+  --color-primary:        #065f46;
+  --color-primary-hover:  #047857;
   --color-secondary:      #ca8a04;
   --color-background:     #f0fdf4;
   --color-surface:        #dcfce7;
   --color-text:           #14532d;
   --color-text-light:     #4b7c59;
   --color-border:         #bbf7d0;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+}
+
+/* ─── Thème soleil — jaune vif, typo rouge, ultra festif ────────── */
+[data-theme="soleil"] {
+  --color-primary:        #dc2626;
+  --color-primary-hover:  #b91c1c;
+  --color-secondary:      #ea580c;
+  --color-background:     #fde34c;
+  --color-surface:        #facc15;
+  --color-text:           #991b1b;
+  --color-text-light:     #92400e;
+  --color-border:         #eab308;
+
+  --gallery-lightbox-bg: rgb(153 27 27 / 0.92);
+
+  --font-display: 'Bangers', cursive;
+}
+
+/* ─── Thème flamenco — orange vif, blanc, énergique ─────────────── */
+[data-theme="flamenco"] {
+  --color-primary:        #ffffff;
+  --color-primary-hover:  #fef3c7;
+  --color-secondary:      #fcd34d;
+  --color-background:     #f97316;
+  --color-surface:        #c2410c;
+  --color-text:           #ffffff;
+  --color-text-light:     #7c2d12;
+  --color-border:         #fb923c;
+  --color-btn-text:       #451a03;
+
+  --gallery-lightbox-bg: rgb(249 115 22 / 0.92);
+
+  --font-display: 'Bebas Neue', sans-serif;
+
+  --color-hero-text:       #7c2d12;
+  --color-hero-action:     #7c2d12;
+  --color-hero-action-text: #ffffff;
+}
+
+/* ─── Thème papier — vintage, artistique, encre brune ───────────── */
+[data-theme="papier"] {
+  --color-primary:        #92400e;
+  --color-primary-hover:  #78350f;
+  --color-secondary:      #78716c;
+  --color-background:     #fffbeb;
+  --color-surface:        #fef3c7;
+  --color-text:           #451a03;
+  --color-text-light:     #78716c;
+  --color-border:         #d6d3d1;
+
+  --font-display: 'Fraunces', Georgia, serif;
 }
 
 /* ─── Fallback CSS pur si JS désactivé ──────────────────────────── */
-/* S'applique uniquement si data-theme n'est pas posé sur <html>     */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --color-primary:        #60a5fa;
-    --color-primary-hover:  #93c5fd;
-    --color-secondary:      #34d399;
-    --color-background:     #111827;
-    --color-surface:        #1f2937;
-    --color-text:           #f9fafb;
-    --color-text-light:     #9ca3af;
-    --color-border:         #374151;
+    --color-primary:        #fbbf24;
+    --color-primary-hover:  #fcd34d;
+    --color-secondary:      #22d3ee;
+    --color-background:     #1c1917;
+    --color-surface:        #292524;
+    --color-text:           #faf5ef;
+    --color-text-light:     #a8a29e;
+    --color-border:         #44403c;
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4);
   }

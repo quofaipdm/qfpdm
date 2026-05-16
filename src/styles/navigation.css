@@ -130,6 +130,13 @@
     flex-wrap: wrap;
   }
 
+  .nav-link,
+  .nav-submenu-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
   .nav-submenu-toggle {
     display: inline-flex;
   }
