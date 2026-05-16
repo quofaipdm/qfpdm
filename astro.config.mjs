@@ -3,6 +3,7 @@ import sitemap from '@astrojs/sitemap';
 import icon from 'astro-icon';
 import rehypeImageToolkit from 'rehype-image-toolkit';
 import rehypeImageGrid from './src/utils/rehype-image-grid';
+import rehypeImageSrcset from './src/utils/rehype-image-srcset';
 import rehypeHeadingLevel from './src/utils/rehype-heading-level';
 import { imageService } from '@unpic/astro/service';
 
@@ -23,7 +24,7 @@ export default defineConfig({
   },
 
   markdown: {
-    rehypePlugins: [rehypeImageToolkit, rehypeImageGrid, rehypeHeadingLevel],
+    rehypePlugins: [rehypeImageToolkit, rehypeImageGrid, rehypeImageSrcset, rehypeHeadingLevel],
   },
   // Pas d'adaptateur @astrojs/cloudflare : site 100% statique.
   // Cloudflare Pages sert dist/ directement.
