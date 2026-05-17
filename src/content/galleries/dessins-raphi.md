@@ -1,5 +1,5 @@
 ---
-title: Dessins - Raphi
+title: Dessins de Raphi
 date: 2026-05-02
 cover: https://media.quofai.org/qfpdm_site/a_l_ancienne/Dessins_Raphi/illus%20019%20Pti%20clown04.jpg
 coverWidth: 575

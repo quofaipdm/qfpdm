@@ -1,5 +1,5 @@
 ---
-title: Birbizis 2 - Tournoi Palets 2024
+title: Birbizis 2 - Tournoi de Palets 2024
 date: 2026-05-09
 cover: https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_tournoi_palets/IMG_20240928_012300.jpg
 coverWidth: 4096
