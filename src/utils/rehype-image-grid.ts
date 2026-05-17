@@ -10,7 +10,7 @@ function isWhitespaceOnly(node: RootContent): boolean {
 
 function isImageOrLinkWrappingImage(node: RootContent): boolean {
   if (is(node, 'img')) return true;
-  if (is(node, 'a') && node.children.length === 1 && is(node.children[0], 'img')) return true;
+  if (is(node, 'a') && (node as Element).children.length === 1 && is((node as Element).children[0], 'img')) return true;
   return false;
 }
 
@@ -19,7 +19,7 @@ function isImageOnlyParagraph(node: RootContent): node is Element {
   return isImageOrLinkWrappingImage(node.children[0]);
 }
 
-function isMultiImageParagraph(node: RootContent): boolean {
+function isMultiImageParagraph(node: RootContent): node is Element {
   if (!is(node, 'p')) return false;
   let count = 0;
   for (const child of node.children) {
@@ -32,10 +32,45 @@ function isMultiImageParagraph(node: RootContent): boolean {
   return count >= 2;
 }
 
+function isMediaQuofai(src: string): boolean {
+  return src.includes('media.quofai.org');
+}
+
+function hasClass(props: Record<string, unknown> | undefined, cls: string): boolean {
+  const className = props?.className;
+  if (Array.isArray(className)) return className.includes(cls);
+  if (typeof className === 'string') {
+    return className === cls ||
+      className.startsWith(cls + ' ') ||
+      className.includes(' ' + cls + ' ') ||
+      className.endsWith(' ' + cls);
+  }
+  return false;
+}
+
+function normalizeGridChild(el: Element): Element {
+  // Case: <a> wrapping <img>
+  if (el.tagName === 'a' && el.children.length === 1 && is(el.children[0], 'img')) {
+    const href = String(el.properties?.href ?? '');
+
+    if (hasClass(el.properties, 'gallery-card') && isMediaQuofai(href)) {
+      // Autolink from rehype-image-toolkit — unwrap, keep img bare
+      return el.children[0] as Element;
+    }
+
+    // User-created link — preserve as-is
+    return el;
+  }
+
+  // Case: bare <img> — keep as-is (no wrapper, no data attrs)
+  // The client-side wrapImagesWithLinks reads img.getAttribute('url')
+  // which is set by Astro's image service with the original URL.
+
+  return el;
+}
+
 export default function rehypeImageGrid() {
   return (tree: Root) => {
-    // Pre-process: split <p> containing multiple images (separated only by
-    // whitespace) into individual single-image <p> elements.
     for (let i = tree.children.length - 1; i >= 0; i--) {
       const node = tree.children[i];
       if (isMultiImageParagraph(node)) {
@@ -57,14 +92,24 @@ export default function rehypeImageGrid() {
     const out: RootContent[] = [];
     let buffer: Element[] = [];
     let pendingTail: RootContent[] = [];
+    let gridIdCounter = 0;
 
     function emitBuffer() {
       if (buffer.length >= 2) {
+        const children = buffer.map((p) => {
+          const child = p.children[0] as Element;
+          return normalizeGridChild(child);
+        });
+
+        gridIdCounter++;
         out.push({
           type: 'element',
           tagName: 'div',
-          properties: { className: ['prose-image-grid'] },
-          children: buffer.map(p => p.children[0]),
+          properties: {
+            className: ['prose-image-grid', 'pswp-gallery'],
+            id: `pswp-prose-grid-${gridIdCounter}`,
+          },
+          children,
         });
       } else {
         out.push(...buffer);
