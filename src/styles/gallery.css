@@ -1,16 +1,17 @@
 /* ─── Grille ────────────────────────────────────────────────────── */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(var(--gallery-cols), 1fr);
+  /*grid-template-columns: repeat(var(--gallery-cols), 1fr);*/
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: var(--gallery-gap);
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (max-width: 480px) {
     grid-template-columns: 1fr;
-  }
+  } */
 }
 
 /* ─── Card photo ────────────────────────────────────────────────── */
@@ -49,16 +50,17 @@
 /* ─── Liste des galeries ────────────────────────────────────────── */
 .galleries-grid {
   display: grid;
-  grid-template-columns: repeat(var(--gallery-cols), 1fr);
+  /*grid-template-columns: repeat(var(--gallery-cols), 1fr);*/
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: var(--spacing-xl);
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (max-width: 480px) {
     grid-template-columns: 1fr;
-  }
+  } */
 }
 
 .gallery-cover-link {

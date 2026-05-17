@@ -34,13 +34,13 @@ const galleries = (await getCollection('galleries', ({ data }) => !data.draft))
             <div class="card-body">
               <h2 class="card-title">{a.data.title}</h2>
               {a.data.description && <p class="card-description">{a.data.description}</p>}
-              <div class="card-meta">
-                {/* <time>
+              {/* <div class="card-meta">
+                <time>
                   {a.data.date.toLocaleDateString('fr-FR', {
                     year: 'numeric', month: 'long', day: 'numeric',
                   })}
-                </time> */}
-              </div>
+                </time>
+              </div> */}
             </div>
           </a>
         ))}

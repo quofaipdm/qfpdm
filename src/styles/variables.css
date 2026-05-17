@@ -40,7 +40,7 @@
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 
   --gallery-gap:         1rem;
-  --gallery-cols:        3;
+  /*--gallery-cols:        3;*/
   --gallery-lightbox-bg: rgb(0 0 0 / 0.92);
 }
 

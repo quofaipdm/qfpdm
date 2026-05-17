@@ -40,48 +40,56 @@ function getImageSize(w: number | undefined, h: number | undefined) {
   })}
 </div>
 
-<script define:vars={{ galleryId }}>
+<script>
   import PhotoSwipeLightbox from 'photoswipe/lightbox';
   import 'photoswipe/style.css';
 
-  function initLightbox() {
-    const gallery = document.getElementById(galleryId);
-    if (!gallery) return;
+  const instances = [];
 
-    const cards = gallery.querySelectorAll<HTMLAnchorElement>('a.gallery-card');
+  function initLightboxes() {
+    const galleries = document.querySelectorAll('.pswp-gallery');
 
-    cards.forEach((a) => {
-      if (a.dataset.pswpWidth === '0' || a.dataset.pswpHeight === '0') {
-        const img = new Image();
-        img.onload = () => {
-          a.dataset.pswpWidth = String(img.naturalWidth);
-          a.dataset.pswpHeight = String(img.naturalHeight);
-        };
-        img.src = a.href;
-      }
+    galleries.forEach((gallery) => {
+      const id = gallery.id;
+      if (!id) return;
+
+      const cards = gallery.querySelectorAll('a.gallery-card');
+
+      cards.forEach((a) => {
+        if (a.dataset.pswpWidth === '0' || a.dataset.pswpHeight === '0') {
+          const img = new Image();
+          img.onload = () => {
+            a.dataset.pswpWidth = String(img.naturalWidth);
+            a.dataset.pswpHeight = String(img.naturalHeight);
+          };
+          img.src = a.href;
+        }
+      });
+
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: `#${id}`,
+        children: 'a',
+
+        initialZoomLevel: 'fill',
+        secondaryZoomLevel: (z) => z.fit,
+        maxZoomLevel: (z) => z.fill * 2,
+
+        pswpModule: () => import('photoswipe'),
+      });
+
+      instances.push(lightbox);
+      lightbox.init();
     });
-
-    const lightbox = new PhotoSwipeLightbox({
-      gallery: `#${galleryId}`,
-      children: 'a',
-
-      initialZoomLevel: 'fill',
-      secondaryZoomLevel: (z) => z.fit,
-      maxZoomLevel: (z) => z.fill * 2,
-
-      pswpModule: () => import('photoswipe'),
-    });
-
-    document.addEventListener('astro:before-swap', () => {
-      lightbox.destroy();
-    });
-
-    lightbox.init();
   }
 
+  document.addEventListener('astro:before-swap', () => {
+    instances.forEach((lb) => lb.destroy());
+    instances.length = 0;
+  });
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initLightbox);
+    document.addEventListener('DOMContentLoaded', initLightboxes);
   } else {
-    initLightbox();
+    initLightboxes();
   }
 </script>

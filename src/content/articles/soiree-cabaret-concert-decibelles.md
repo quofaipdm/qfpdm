@@ -3,7 +3,7 @@ title: Soirée Cabaret Concert DECIB'ELLES
 description: Concert DECIB'ELLES
 date: 2006-02-11
 category: archives
-cover: https://media.quofai.org/qfpdm_site/a_l_ancienne/Vrac_des_archives/decibelles.jpg
+cover: https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2006_soiree_decibelles-1.jpg
 draft: false
 ---
 ![Concert Décib'elles](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2006%20decibelles.jpg)
