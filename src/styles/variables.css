@@ -87,7 +87,7 @@
 
   --gallery-lightbox-bg: rgb(153 27 27 / 0.92);
 
-  --font-display: 'Bangers', cursive;
+  --font-display: 'Ultra', serif;
 }
 
 /* ─── Thème flamenco — orange vif, blanc, énergique ─────────────── */
@@ -98,7 +98,7 @@
   --color-background:     #f97316;
   --color-surface:        #c2410c;
   --color-text:           #ffffff;
-  --color-text-light:     #7c2d12;
+  --color-text-light:     #fef3c7;
   --color-border:         #fb923c;
   --color-btn-text:       #451a03;
 
