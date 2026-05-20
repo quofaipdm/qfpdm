@@ -4,6 +4,7 @@ description: Rencontre de jongleurs 2007
 date: 2007-09-12
 category: archives
 cover: https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2007%20affiche%20rencontre%20jongleurs.jpg
+galleryRef: https://quofai.org/galeries/rencontre-jongleurs-2007/
 draft: false
 ---
 ![affiche jongle 2007](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2007%20affiche%20rencontre%20jongleurs.jpg)
