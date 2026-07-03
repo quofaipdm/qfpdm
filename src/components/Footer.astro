@@ -1,10 +1,26 @@
 ---
+import { Icon } from 'astro-icon/components';
 const year = new Date().getFullYear();
 ---
 
 <footer class="site-footer">
   <div class="container">
-    Quo Faï Pas De Mau &copy; {year} [ quofai87@gmail.com ]
+    <div class="footer-content">
+      <span class="footer-copyright">
+        Quo Faï Pas De Mau &copy; {year}
+      </span>
+      <span class="footer-separator" aria-hidden="true">·</span>
+      <a href="mailto:quofai87@gmail.com" class="footer-link">quofai87@gmail.com</a>
+      <a
+        href="https://www.facebook.com/quofaipasdemau/"
+        class="footer-social-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Facebook"
+      >
+        <Icon name="simple-icons:facebook" size={18} />
+      </a>
+    </div>
   </div>
 </footer>
 
