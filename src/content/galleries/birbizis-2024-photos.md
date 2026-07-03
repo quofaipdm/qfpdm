@@ -10,19 +10,16 @@ images: |
   https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240928_110824.jpg
   https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240928_203209(1).jpg
   https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240928_212504.jpg
-  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240927_212109_155.jpg
   https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20241001_175045.jpg
   https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240929_091600_849.jpg
   https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240927_200712_120.jpg
   https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240928_171629.jpg
-  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240927_212206_194.jpg
   https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240928_171637.jpg
   https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240927_200735_064.jpg
   https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240927_212158_996.jpg
   https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20241001_174747_edit_15419096088792.jpg
   https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240927_164542.jpg
   https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240927_164603.jpg
-  https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240927_200740_736.jpg
   https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240928_171913.jpg
   https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240928_171904.jpg
   https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024%20Birbizis/IMG_20240928_110851.jpg
