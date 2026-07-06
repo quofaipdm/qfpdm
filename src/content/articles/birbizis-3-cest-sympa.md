@@ -7,8 +7,6 @@ cover: https://media.quofai.org/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Photos/
 galleryRef: https://qfpdm.pages.dev/galeries/birbizis-2025-photos/
 draft: false
 ---
-
-
 ![](https://media.quofai.org/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Affiches/2025%20prog%20birbizis3%20f.jpg)
 
 
@@ -17,5 +15,6 @@ draft: false
 
 ![](https://media.quofai.org/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Affiches/2025%20programme%20birbizis%20v3.jpg)
 
-Une bien belle édition.
 
+
+&nbsp;
