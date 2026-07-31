@@ -11,7 +11,7 @@ draft: false
 ---
 ![](https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Affiches/2024%20affiches/2024%20birbizis%202%20fin.jpg)
 
-
+.
 
 ![](https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Affiches/2024%20affiches/2024%20kloog_26095.jpg)
 ![](https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Affiches/2024%20affiches/2024%20AfficheEclosion.jpg)
