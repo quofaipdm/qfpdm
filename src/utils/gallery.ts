@@ -38,6 +38,16 @@ export function parseGalleryImages(
   return items;
 }
 
+const R2_RE = /^https:\/\/media\.quofai\.org\//;
+
+export function toCdnUrl(url: string, width = 1600): string {
+  if (!url || url.includes('/cdn-cgi/image/')) return url;
+  return url.replace(
+    R2_RE,
+    `https://media.quofai.org/cdn-cgi/image/width=${width},format=auto/`,
+  );
+}
+
 function extractIdFromRef(ref: string): string {
   try {
     const u = new URL(ref);

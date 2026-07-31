@@ -5,7 +5,6 @@ import rehypeImageToolkit from 'rehype-image-toolkit';
 import rehypeImageGrid from './src/utils/rehype-image-grid';
 import rehypeImageSrcset from './src/utils/rehype-image-srcset';
 import rehypeHeadingLevel from './src/utils/rehype-heading-level';
-import { imageService } from '@unpic/astro/service';
 
 export default defineConfig({
   site: 'https://quofai.org',
@@ -13,13 +12,15 @@ export default defineConfig({
   output: 'static',
 
    image: {
-    // Unpic détecte automatiquement les CDN depuis les URLs.
-    // Pour les URLs sur media.votredomaine.fr, il utilise le provider
-    // cloudflare qui génère les URLs /cdn-cgi/image/... (Image Resizing).
-    // Gratuit jusqu'à 5 000 transformations uniques/mois.
-    service: imageService({
-      layout: 'constrained',
-    }),
+    // Service local : réplique de @unpic/astro (sharp) + stringification de
+    // l'objet style retourné par @unpic/core (sinon Astro sérialise en
+    // style="[object Object]"). Voir src/utils/unpic-image-service.ts.
+    service: {
+      entrypoint: './src/utils/unpic-image-service.ts',
+      config: {
+        layout: 'constrained',
+      },
+    },
     domains: ['media.quofai.org'],
   },
 
@@ -31,9 +32,6 @@ export default defineConfig({
 
   integrations: [
     sitemap(),
-    // imagekit({
-    //   urlEndpoint: 'https://ik.imagekit.io/qfpdm',
-    // }),
     icon(),
   ],
 

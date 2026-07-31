@@ -1,5 +1,6 @@
 ---
 import { Image } from '@unpic/astro';
+import { toCdnUrl } from '@utils/gallery';
 
 const { items, galleryId = 'gallery' } = Astro.props;
 
@@ -17,7 +18,7 @@ function getImageSize(w: number | undefined, h: number | undefined) {
     const size = getImageSize(item.width, item.height);
     return (
       <a
-        href={`${item.imageUrl}${item.imageUrl.includes('?') ? '&' : '?'}tr=w-1600`}
+        href={toCdnUrl(item.imageUrl)}
         data-pswp-width={size.w ?? 0}
         data-pswp-height={size.h ?? 0}
         class="gallery-card"

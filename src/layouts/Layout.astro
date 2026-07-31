@@ -66,8 +66,12 @@ const DEFAULT_THEME = 'soleil';
           // dev mode: fall back to src (which is the original URL in dev)
           const src = img.getAttribute('url') || img.getAttribute('src');
           if (!src || !src.includes('media.quofai.org')) return;
-          const sep = src.includes('?') ? '&' : '?';
-          const href = src + sep + 'tr=w-1600';
+          const href = src.includes('/cdn-cgi/image/')
+            ? src
+            : src.replace(
+                /^https:\/\/media\.quofai\.org\//,
+                'https://media.quofai.org/cdn-cgi/image/width=1600,format=auto/',
+              );
           const a = document.createElement('a');
           a.href = href;
           a.dataset.pswpWidth = '0';
