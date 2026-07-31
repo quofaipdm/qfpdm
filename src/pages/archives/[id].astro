@@ -21,7 +21,7 @@ const { Content } = await render(article);
 const isYouTube = (url: string) =>
   url.includes('youtube.com') || url.includes('youtu.be');
 
-const hasBody = article.body?.trim().length > 0;
+const hasBody = (article.body?.trim() ?? '').length > 0;
 
 const gallerySections: GallerySection[] = data.galleryRef
   ? await resolveGalleryRefs(data.galleryRef)

@@ -8,11 +8,15 @@ import {
 import { transformUrl } from 'unpic';
 import sharpImageService from 'astro/assets/services/sharp';
 
-// Réplique de @unpic/astro/dist/service/base.js + sharp.js, construite à
-// partir des imports PUBLICS (@unpic/core, unpic) — @unpic/astro n'expose pas
-// son service (exports map = ".", "./base", "./service" uniquement).
-// Seule différence : stringification de l'objet `style` retourné par
-// transformProps/getStyle, sinon Astro sérialise style="[object Object]".
+// DÉVIATION PLAN → CODE (plan 11 : dev/old/11-unpic-style-object-fix.md,
+// commit 4e58ff7) : le plan prévoyait `import baseService from '@unpic/astro/base'`,
+// mais l'exports map de @unpic/astro (= ".", "./base", "./service") mappe "./base"
+// sur dist/base.js qui exporte les COMPOSANTS Image/Source (.astro), pas le
+// service. Le vrai service (dist/service/sharp.js = base.js + transform/parseURL
+// sharp) n'est pas exposé par l'exports map → inatteignable. On réplique donc
+// le service depuis les imports PUBLICS (@unpic/core, unpic, sharp).
+// Seule différence fonctionnelle : stringification de l'objet `style` retourné
+// par transformProps, sinon Astro sérialise style="[object Object]".
 
 function getDefaultService(): string {
   if (env.NETLIFY || env.NETLIFY_LOCAL || 'Netlify' in globalThis) {

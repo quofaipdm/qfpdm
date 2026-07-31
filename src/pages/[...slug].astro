@@ -16,7 +16,7 @@ const { page } = Astro.props;
 const { data } = page;
 const { Content } = await render(page);
 
-const hasBody = page.body?.trim().length > 0;
+const hasBody = (page.body?.trim() ?? '').length > 0;
 
 const gallerySections: GallerySection[] = data.galleryRef
   ? await resolveGalleryRefs(data.galleryRef)

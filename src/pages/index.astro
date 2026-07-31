@@ -8,7 +8,6 @@ import { resolveGalleryRefs, type GallerySection } from '@utils/gallery';
 
 const articles = (await getCollection('articles', ({ data }) => !data.draft && data.category === 'news'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-const latest = articles[0] ?? null;
 
 const isYouTube = (url: string) =>
   url.includes('youtube.com') || url.includes('youtu.be');
@@ -59,7 +58,7 @@ const renderedArticles = await Promise.all(
           </div>
         )}
 
-        {article.body?.trim().length > 0 && (
+        {(article.body?.trim() ?? '').length > 0 && (
           <div class="prose">
             <Content />
           </div>

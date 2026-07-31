@@ -115,7 +115,7 @@ const isChildActive = (children: NavChild[] | undefined) =>
     });
   });
 
-  const sel = document.getElementById('theme-select');
+  const sel = document.querySelector<HTMLSelectElement>('#theme-select');
   if (sel) {
     sel.value = document.documentElement.getAttribute('data-theme') || 'light';
     sel.addEventListener('change', () => {

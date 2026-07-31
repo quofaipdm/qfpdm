@@ -1,6 +1,11 @@
 ---
 import { Image } from '@unpic/astro';
-import { toCdnUrl } from '@utils/gallery';
+import { toCdnUrl, type GalleryImage } from '@utils/gallery';
+
+interface Props {
+  items: GalleryImage[];
+  galleryId?: string;
+}
 
 const { items, galleryId = 'gallery' } = Astro.props;
 

@@ -19,7 +19,7 @@ const { Content } = await render(gallery);
 
 const rawImages = parseGalleryImages(data.images, data.title);
 
-const hasBody = gallery.body?.trim().length > 0;
+const hasBody = (gallery.body?.trim() ?? '').length > 0;
 ---
 
 <Layout title={`${data.title} — Galeries`} description={data.description}>
