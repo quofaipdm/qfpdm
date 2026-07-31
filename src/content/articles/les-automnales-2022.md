@@ -7,3 +7,11 @@ draft: false
 ---
 ![](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2022_automnales_affiche.jpg)
 
+
+
+.
+
+
+
+![](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2022_automnales_programme.jpg)
+
