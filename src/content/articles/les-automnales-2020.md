@@ -5,9 +5,17 @@ category: archives
 cover: https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2020%20automnales%20Prog_01-01.jpg
 draft: false
 ---
+
+
+![](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2020_automnales_affiche.jpg)
+
+-
+
 ![](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2020%20automnales%20Prog_01-01.jpg)
 
 
+
+&nbsp;
 
 ![](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2020%20automnales%20Prog_01-02.jpg)
 
