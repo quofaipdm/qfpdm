@@ -7,6 +7,12 @@ cover: https://media.quofai.org/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Photos/
 galleryRef: https://qfpdm.pages.dev/galeries/birbizis-2025-photos/
 draft: false
 ---
+![](https://media.quofai.org/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Affiches/2025%20AFFICHE%203.jpg)
+
+
+
+&nbsp;
+
 ![](https://media.quofai.org/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Affiches/2025%20prog%20birbizis3%20f.jpg)
 
 
@@ -18,3 +24,42 @@ draft: false
 
 
 &nbsp;
+
+![](https://media.quofai.org/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Affiches/2025%20les%20involtes.PNG)
+
+
+
+![](https://media.quofai.org/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Affiches/2025%20aliza%20affiche.jpg)
+
+
+
+&nbsp;
+
+![](https://media.quofai.org/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Affiches/2025%20verso%20fly.jpg)
+
+
+
+&nbsp;
+
+![](https://media.quofai.org/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Affiches/2025%20affiche%20palets.jpg)
+
+
+
+![](https://media.quofai.org/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Affiches/2025%20Fly%20Expo.jpg)
+
+
+
+&nbsp;
+
+![](https://media.quofai.org/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Affiches/2025%20tarot.PNG)
+
+
+
+![](https://media.quofai.org/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Affiches/2025_atelier_modelage_affiche.jpg)
+
+
+
+&nbsp;
+
+![](https://media.quofai.org/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Affiches/2025_birbizis3_affiche_mefiat.jpg)
+
