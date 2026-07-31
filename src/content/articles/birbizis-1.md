@@ -16,7 +16,7 @@ draft: false
 
 ![](https://media.quofai.org/qfpdm_site/Birbizis/2023_Birbizis_1/2023_Affiches/2023_birbizis1_programme.jpg)
 
-
+.
 
 ![](https://media.quofai.org/qfpdm_site/Birbizis/2023_Birbizis_1/2023_Affiches/2023_birbizis1_affiche_kv_express.jpg)
 
