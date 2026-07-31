@@ -9,3 +9,18 @@ coverHeight: 4160
 draft: false
 ---
 ![](https://media.quofai.org/qfpdm_site/Birbizis/2023_Birbizis_1/2023_Affiches/2023%20affiche%20Nume%CC%81risation_20240515.png)
+
+.
+
+
+
+![](https://media.quofai.org/qfpdm_site/Birbizis/2023_Birbizis_1/2023_Affiches/2023_birbizis1_programme.jpg)
+
+
+
+![](https://media.quofai.org/qfpdm_site/Birbizis/2023_Birbizis_1/2023_Affiches/2023_birbizis1_affiche_kv_express.jpg)
+
+
+
+![](https://media.quofai.org/qfpdm_site/Birbizis/2023_Birbizis_1/2023_Affiches/2023_birbizis1-affiche_qualite.jpg)
+
