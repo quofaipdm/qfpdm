@@ -1,6 +1,6 @@
 ---
 title: "Birbizis #2 — Nous sommes de retour !"
-description: La deuxième édition des Birbizis était encore plus ambitieuse.
+description: Le village du feu !
 date: 2024-09-28
 category: birbizis
 cover: https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Photos/2024
@@ -12,8 +12,6 @@ draft: false
 ![](https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Affiches/2024%20affiches/2024%20birbizis%202%20fin.jpg)
 
 
-
-## Une édition grandiosissime
 
 ![](https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Affiches/2024%20affiches/2024%20kloog_26095.jpg)
 ![](https://media.quofai.org/qfpdm_site/Birbizis/2024_Birbizis_2/2024_Affiches/2024%20affiches/2024%20AfficheEclosion.jpg)
