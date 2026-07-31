@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+  overflow: hidden;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: var(--color-hero-text);
   padding: var(--spacing-2xl) var(--spacing-lg);
@@ -7,8 +8,30 @@
   border-radius: var(--border-radius-lg);
   text-align: center;
 }
+.hero-background {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-background img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--color-hero-overlay);
+}
+
+.hero-has-background .hero-body {
+  text-shadow: var(--color-hero-text-shadow);
+}
 
 .hero-body {
+  position: relative;
   max-width: 640px;
   margin-inline: auto;
 }

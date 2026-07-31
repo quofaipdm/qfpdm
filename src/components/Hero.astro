@@ -4,12 +4,19 @@ interface Props {
   subtitle?: string;
   ctaHref?: string;
   ctaLabel?: string;
+  backgroundImage?: string;
 }
 
-const { title, subtitle, ctaHref, ctaLabel } = Astro.props;
+const { title, subtitle, ctaHref, ctaLabel, backgroundImage } = Astro.props;
 ---
 
-<section class="hero">
+<section class:list={['hero', { 'hero-has-background': backgroundImage }]}>
+  {backgroundImage && (
+    <div class="hero-background" aria-hidden="true">
+      <img src={backgroundImage} alt="" />
+      <div class="hero-overlay"></div>
+    </div>
+  )}
   <div class="hero-body">
     <h1 class="hero-title">{title}</h1>
     {subtitle && <p class="hero-subtitle">{subtitle}</p>}

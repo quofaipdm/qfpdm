@@ -11,9 +11,11 @@
   --color-hero-text:       #ffffff;
   --color-hero-action:     #ffffff;
   --color-hero-action-text: var(--color-primary);
+  --color-hero-overlay:    rgba(0, 0, 0, 0.45);
+  --color-hero-text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-/* ─── Thème par défaut (clair) — chaleureux, accueillant ────────── */
+/* ─── Thème clair — chaleureux, accueillant -> choice disabled ────────── */
 :root,
 [data-theme="light"] {
   --color-primary:        #b45309;
@@ -104,10 +106,10 @@
 
   --gallery-lightbox-bg: rgb(249 115 22 / 0.92);
 
-  --font-display: 'Bebas Neue', sans-serif;
+  --font-display: 'Fraunces', sans-serif;
 
-  --color-hero-text:       #7c2d12;
-  --color-hero-action:     #7c2d12;
+  --color-hero-text:       #ffffff;
+  --color-hero-action:     #ffffff;
   --color-hero-action-text: #ffffff;
 }
 
