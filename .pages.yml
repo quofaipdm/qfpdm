@@ -28,9 +28,8 @@ content:
       - { name: videoUrl,    label: "Vidéo (URL YouTube ou Vimeo)",         type: string,   description: "YouTube: https://youtube.com/watch?v=... ou Vimeo: https://vimeo.com/..." }
       - name: galleryRef
         label: "Galeries associées"
-        type: list
-        fields:
-          - { name: url, label: "URL complète de la galerie", type: string, description: "Collez l'URL depuis la barre d'adresse du site (ex: https://quofai.org/galeries/mon-evenement/)" }
+        type: text
+        description: "Une URL de galerie par ligne (ex: https://quofai.org/galeries/mon-evenement/). L'ordre des lignes est l'ordre d'affichage."
       - { name: draft,       label: Brouillon,                              type: boolean,  default: true }
       - name: body
         label: Contenu
@@ -49,9 +48,8 @@ content:
       - { name: description, label: Description SEO,  type: string }
       - name: galleryRef
         label: "Galeries associées"
-        type: list
-        fields:
-          - { name: url, label: "URL complète de la galerie", type: string, description: "Collez l'URL depuis la barre d'adresse du site (ex: https://quofai.org/galeries/mon-evenement/)" }
+        type: text
+        description: "Une URL de galerie par ligne (ex: https://quofai.org/galeries/mon-evenement/). L'ordre des lignes est l'ordre d'affichage."
       - name: body
         label: Contenu
         type: rich-text
@@ -77,13 +75,8 @@ content:
       - { name: draft,       label: Brouillon,                                type: boolean,  default: true }
       - name: images
         label: Images
-        type: list
-        description: "Une URL R2 par ligne. alt, largeur et hauteur optionnels"
-        fields:
-          url:    { label: "URL de l'image (R2)",       type: string, required: true }
-          alt:    { label: "Texte alternatif",          type: string }
-          width:  { label: "Largeur (px)",              type: number }
-          height: { label: "Hauteur (px)",              type: number }
+        type: text
+        description: "Une URL R2 par ligne. L'ordre des lignes est l'ordre d'affichage dans la lightbox."
       - name: body
         label: Description détaillée
         type: rich-text
