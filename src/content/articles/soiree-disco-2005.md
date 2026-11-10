@@ -1,6 +1,6 @@
 ---
 title: Soirée Disco 2005
-description: Une soirée disco mémorable organisée à Solignac.
+description: Une soirée disco mémorable organisée au Woodstock Boogie Bar
 date: 2005-01-15
 category: archives
 cover: https://media.quofai.org/qfpdm_site/Birbizis/2023_Birbizis_1/2023_Photos/IMG_20231030_185938.jpg
