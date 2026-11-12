@@ -28,18 +28,6 @@ images: |
   https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/cirquesansnom/IMG_0197.jpg
   https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/cirquesansnom/IMG_0199.jpg
   https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/fnrcc/IMG_0074.jpg
-  https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/fnrcc/IMG_0078.jpg
-  https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/fnrcc/IMG_0080.jpg
-  https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/fnrcc/IMG_0083.jpg
-  https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/fnrcc/IMG_0112.jpg
-  https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/fnrcc/IMG_0114.jpg
-  https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/fnrcc/IMG_0115.jpg
-  https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/fnrcc/IMG_0118.jpg
-  https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/fnrcc/IMG_0119.jpg
-  https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/fnrcc/IMG_0120.jpg
-  https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/fnrcc/IMG_0228.jpg
-  https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/fnrcc/IMG_0229.jpg
-  https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/fnrcc/IMG_0230.jpg
   https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/gala/IMG_0014.jpg
   https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/gala/IMG_0019.jpg
   https://media.quofai.org/qfpdm_site/a_l_ancienne/rencontre_jongleurs_2007/gala/IMG_0022.jpg
