@@ -4,6 +4,7 @@ description: La Rencontre de Jongleurs 2005
 date: 2005-09-15
 category: archives
 cover: https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2005%20affiche%20rencontre%20jongl.jpg
+galleryRef: https://qfpdm.pages.dev/galeries/rencontre-jongleurs-2005/
 draft: false
 ---
 ![Jongle 2005](https://media.quofai.org/qfpdm_site/a_l_ancienne/Affiches_anciennes/2005%20affiche%20rencontre%20jongl.jpg)
