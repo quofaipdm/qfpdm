@@ -9,7 +9,6 @@ images: |-
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-11.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-12.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-13.webp
-  https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-14.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-15.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-16.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-17.webp
@@ -21,7 +20,6 @@ images: |-
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-22.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-23.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-24.webp
-  https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-25.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-26.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-27.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-28.webp
@@ -41,13 +39,11 @@ images: |-
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-40.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-41.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-42.webp
-  https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-43.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-44.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-45.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-46.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-47.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-48.webp
-  https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-49.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-5.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-50.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-51.webp
@@ -63,7 +59,6 @@ images: |-
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-60.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-61.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-62.webp
-  https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-63.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-64.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-65.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-66.webp
@@ -77,12 +72,10 @@ images: |-
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-73.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-74.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-75.webp
-  https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-76.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-77.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-78.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-79.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-8.webp
-  https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-80.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-81.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-82.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-83.webp
@@ -95,7 +88,6 @@ images: |-
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-9.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-90.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-91.webp
-  https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-92.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-93.webp
   https://media.quofai.org/qfpdm_site/Birbizis/2026_Birbizis_4/2026_photos/birbizis4_antoine_gatet/birbizis4_antoine_gatet-birbizis_antoine-gatet-94.webp
 ---
