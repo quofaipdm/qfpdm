@@ -1,6 +1,6 @@
 ---
 title: Birbizis 3 - Photos 2025
-date: 2025-11-12
+date: 2026-05-12
 cover: https://media.quofai.org/qfpdm_site/Birbizis/2025_Birbizis_3/2025_Photos/2025%20Birbizis/IMG_20250920_175040_663.jpg
 coverWidth: 1600
 coverHeight: 720
